@@ -1,0 +1,13 @@
+Hero -> eStartup
+About us -> Pake punya Ittode
+Layanan -> Features eStartup
+Galeri -> Kandank Oewang
+Blog -> Blog eStartup (Latest Post)
+Testimoni -> Bikin (bootstrapmade)
+Kontak -> Contact Ittode
+Footer -> Bikin (bootstrapmade)
+
+Delete breadcrumps (nanti dulu)
+Tambahin tombol login sama register di navbar (done)
+Tambahin tombol more di Layanan 
+Tambahin tombol more di Galeri
