@@ -623,23 +623,22 @@ section {
   padding: 120px 0;
 }
 .aboutus h3 {
-  color: #fff;
+  color: hsla(117, 23%, 16%, 0.907);
   font-size: 28px;
   font-weight: 700;
   padding-bottom: 15px;
 }
 .aboutus p {
-  color: #fff;
-  font-weight: 300;
+  color: hsla(117, 23%, 16%, 0.907);
+  font-weight: 500;
+  /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 .aboutus h5 {
-  color: #fff;
+  color: hsla(117, 23%, 16%, 0.907);
   font-size: 15px;
   font-weight: 500;
 }
-/* .aboutus h3, .aboutus p, .aboutus h5{
-  text-shadow: 0 1px #000000, 1px 0 #000000;
-} */
+
 @media (max-width: 1024px) {
   .aboutus {
     background-attachment: scroll;
