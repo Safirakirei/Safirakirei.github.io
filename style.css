@@ -717,6 +717,65 @@ section {
   bottom: 0px;
   transition: all 0.5s ease-in-out 0s;
 }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 35px; /* Location of the box */
+  padding-bottom: 35px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 100%;
+  width: auto;
+}
+/* Add Animation */
+.modal-content{  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 200;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* Blog Section
 --------------------------------*/
@@ -1019,9 +1078,15 @@ section {
   justify-content: center;
 }
 .kemitraan .section-title h2{
-  font-size: 33px;
-  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: capitalize;
   color: #20321fe7;
+}
+.kemitraan h3{
+  margin-bottom: 5px;
 }
 .kemitraan .elemen1{
   background-color: #EDF8EA;
@@ -1029,6 +1094,7 @@ section {
   margin-bottom: 40px;
 }
 .kemitraan .elemen2{
+  border: 2px solid #72c55db3;
   padding: 10px;
   margin-bottom: 40px;
   direction: rtl;
@@ -1041,6 +1107,73 @@ section {
   align-items: center;
 }
 
+/*--------------------------------------------------------------
+# Detail Kemitraan
+--------------------------------------------------------------*/
+.checkout .deksmit h3{
+  font-size: 20px;
+}
+.checkout .checkoutbox .checkoutboxx h6{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.checkout .checkoutbox .checkoutboxx .bi{
+  color: #3b6631;
+}
+.checkout .checkoutbox .checkoutboxx .row .deskmit{
+  padding: 20px;
+}
+.checkout .checkoutbox .checkoutboxx .row .deskmitc{
+  display: none;
+}
+.checkout .checkoutbox .checkoutboxx .row .deskmit p{
+  display: flex;
+  font-size: larger;
+}
+.checkout .checkoutbox .checkoutboxx .row .btn {
+  border: 1px solid #71c55d;
+  border-radius: 10px;
+  background-color: #62a850;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 7px 20px;
+  text-transform: none;
+  transition: all 0.5s ease-in-out 0s;
+}
+.checkout .checkoutbox .checkoutboxx .row .btn:hover {
+  color: #fff;
+  background-color: #71c55d;
+  border-color: #71c55d;
+}
+.checkout .checkoutbox .checkoutboxx .row .deskmit .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+@media (max-width: 400px) {
+  .checkout .checkoutbox .checkoutboxx .row .deskmit{
+    display: none;
+  }
+  .checkout .checkoutbox .checkoutboxx .row .deskmitc{
+    margin-top: 15px;
+    display: inline;
+  }
+  .checkout .checkoutbox .checkoutboxx .row .deskmitc h3{
+    font-size: 27px;
+  }
+  .checkout .checkoutbox .checkoutboxx .row .deskmitc p{
+    font-size: 18px;
+  }
+  .checkout .checkoutbox .checkoutboxx .row .deskmitc .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+}
 /*--------------------------------------------------------------
 # Produk
 --------------------------------------------------------------*/
@@ -1143,6 +1276,24 @@ section {
   border-color: #2d5f4b;
   background-color: #2d5f4b;
 }
+@media (max-width: 1200px) {
+  .produk .btn-learn-more {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+  .produk .mid {
+    padding: 7px 1px;
+  }
+}
+@media (max-width: 992px) {
+  .produk .btn-learn-more {
+    font-size: 12px;
+    padding: 7px 20px;
+  }
+  .produk .mid {
+    padding: 7px 3px;
+  }
+}
 @media (max-width: 450px) {
   .searchcontainer input{
     width: 150px;
@@ -1161,6 +1312,7 @@ section {
   font-family: "Roboto";
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  margin-bottom: 20px;
 }
 .checkout .checkoutbox {
   margin: 10px;
@@ -1175,7 +1327,7 @@ section {
 }
 .checkout .checkoutbox .checkoutboxx p{
   display: inline;
-  padding: calc(4.5vw);
+  padding: calc(4vw);
 }
 .checkout .checkoutbox .checkoutboxx .list-group{
   display: contents;
@@ -1219,6 +1371,51 @@ section {
   color: #fff;
 }
 
+@media (max-width: 1114px) {
+  .checkout .checkoutbox .checkoutboxx p{
+    padding: calc(3.5vw);
+  }
+  .checkout .searchcontainer .btn{
+    line-height: 18px;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 999px) {
+  .checkout .checkoutbox .checkoutboxx p{
+    padding: calc(3vw);
+  }
+}
+@media (max-width: 905px) {
+  .checkout .checkoutbox .checkoutboxx p{
+    padding: calc(2vw);
+  }
+}
+@media (max-width: 768px) {
+  .checkout .searchcontainer input{
+    width: 70vw;
+  }
+  .checkout .searchcontainer .btn{
+    width: 15vw;
+    padding-top: 8px;
+  }
+}
+@media (max-width: 647px) {
+  .checkout .searchcontainer .btn{
+    padding-top: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .checkout .searchcontainer .btn{
+    padding-top: 0px;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .checkout .checkoutbox .checkoutboxx p{
+    padding-left: 0px;
+    padding-right: 3px;
+  }
+}
 /*Custom checkbox*/
 /* .checkout .checkoutbox .checkoutboxx input {
   opacity: 0;
