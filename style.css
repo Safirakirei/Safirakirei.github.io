@@ -489,13 +489,13 @@ span {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  font-family: 'Gelasio', serif;
+  color: #43b327;
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 35px;
     line-height: 36px;
   }
 }
@@ -504,7 +504,7 @@ span {
   color: #777;
   margin-bottom: 30px;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Oleo Script', 'cursive';
   font-weight: 300;
 }
 
@@ -593,12 +593,18 @@ section {
 }
 
 .section-title h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Gelasio', serif;
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 30px;
+  }
 }
 
 .section-title .separator {
@@ -679,18 +685,18 @@ section {
   margin-bottom: 0;
 }
 
-/* Screenshots Section
+/* gallery Section
 --------------------------------*/
 @media (max-width: 991px) {
-  #screenshots .block-blog {
+  #gallery .block-blog {
     margin-bottom: 30px;
   }
 }
 
-#screenshots .block-blog img {
+#gallery .block-blog img {
   width: 100%;
 }
-#screenshots .team-block {
+#gallery .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   height: auto;
   overflow: hidden;
@@ -703,7 +709,7 @@ section {
     margin-bottom: 30px;
   }
 }
-#screenshots .team-block .team-content {
+#gallery .team-block .team-content {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
@@ -713,7 +719,7 @@ section {
   width: 100%;
   transition: all 0.5s ease-in-out 0s;
 }
-#screenshots .team-block:hover .team-content {
+#gallery .team-block:hover .team-content {
   bottom: 0px;
   transition: all 0.5s ease-in-out 0s;
 }
