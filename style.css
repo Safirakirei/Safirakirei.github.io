@@ -1195,10 +1195,12 @@ section {
   justify-content: center;
 }
 .produk .produk-block {
-  background: #fff none repeat scroll 0 0;
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
   padding: 30px 20px;
   margin-bottom: 30px;
+  border: 0.01px solid #b8e3b3;
   transition: all 0.5s ease-in-out 0s;
+  border-radius: 7px;
 }
 .produk .produk-block img {
   height: auto;
@@ -1209,17 +1211,22 @@ section {
   text-align: start;
 }
 .produk .produk-block:hover {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  transform: translateY(-10px);
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
   transition: all 0.5s ease-in-out 0s;
+  border:1px solid #b8e3b3;
 }
-.produk .produk-block h4 {
-  font-size: 20px;
-  line-height: 1.5;
+.produk .produk-block .produk-name {
+  margin-bottom: 0px;
 }
-.produk .produk-block p {
+.produk .produk-block .produk-category {
   margin-bottom: 0;
-  font-size: medium;
+  font-size: small;
+  font-family: 'Gelasio', serif;
+}
+.produk .produk-block .produk-harga {
+  margin-bottom: 0;
+  font-family: 'Gelasio', serif;
 }
 .produk .button{
   padding-top: 10px;
