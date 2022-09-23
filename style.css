@@ -698,6 +698,15 @@ section {
   width: 100%;
 }
 
+.gdesc-inner {
+  display: none;
+}
+
+.gslide-image img{
+  height: calc(50vh);
+  max-width: calc(90vw);
+}
+
 @media (max-width: 991px) {
   #screenshot .team-block {
     margin-bottom: 30px;
