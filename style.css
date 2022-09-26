@@ -1196,11 +1196,12 @@ section {
 }
 .produk .produk-block {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
-  padding: 30px 20px;
+  padding: 10px 10px 10px 10px;
   margin-bottom: 30px;
-  border: 0.01px solid #b8e3b3;
   transition: all 0.5s ease-in-out 0s;
   border-radius: 7px;
+  box-shadow: 15px 15px 35px 15px rgba(213, 216, 220, 0.3);
+  /* position: relative; */
 }
 .produk .produk-block img {
   height: auto;
@@ -1215,6 +1216,7 @@ section {
   transform: translateY(-5px);
   transition: all 0.5s ease-in-out 0s;
   border:1px solid #b8e3b3;
+  /* border: 0.01px solid #b8e3b3; */
 }
 .produk .produk-block .produk-name {
   margin-bottom: 0px;
@@ -1230,6 +1232,7 @@ section {
 }
 .produk .button{
   padding-top: 10px;
+  /* position: static; */
 }
 .produk .btn-learn-more {
   font-weight: 500;
