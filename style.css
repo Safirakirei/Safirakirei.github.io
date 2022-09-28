@@ -202,7 +202,7 @@ span {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 364px) {
+@media (max-width: 300px) {
   #header #logo .title-web{
     display: none;
   }
@@ -251,7 +251,7 @@ span {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   color: #222;
   white-space: nowrap;
@@ -528,7 +528,7 @@ span {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 13px;
@@ -619,7 +619,7 @@ section {
 
 .separator {
   color: #626262;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 30px;
@@ -796,6 +796,18 @@ section {
     margin-bottom: 30px;
   }
 }
+#blog .block-blog{
+  border:none;
+  margin-bottom: 3px;
+}
+#blog .block-blog:hover{
+  
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.5s ease-in-out 0s;
+  border:1px solid #b8e3b3; 
+}
 
 #blog .block-blog img {
   width: 100%;
@@ -805,7 +817,7 @@ section {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
   min-height: 125px;
-  padding: 20px 10px;
+  padding: 15px 10px;
   width: 100%;
 }
 
@@ -816,35 +828,64 @@ section {
   font-weight: normal;
   letter-spacing: 0;
   font-size: 16px;
+  font-family: 'Gelasio', serif;
 }
 
 #blog .block-blog .content-blog h4 a {
   color: #555;
   text-decoration: none;
   transition: 0.3s;
+  font-size: larger;
 }
 
 #blog .block-blog .content-blog h4 a:hover {
   color: #71c55d;
 }
-
+#blog .block-blog .content-blog .keterangan-blog{
+  position: relative;
+}
 #blog .block-blog .content-blog>span {
   float: left;
   font-size: 12px;
 }
 
 #blog .block-blog .content-blog a.readmore {
-  color: #505050;
+  /* color: #505050; */
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
   letter-spacing: 0;
   text-transform: capitalize;
+  font-family: 'Noto Sans Mono', monospace;
+  color: #71c55d;
 }
 
 #blog .block-blog .content-blog a.readmore:hover {
   color: #71c55d;
+}
+#blog .content-blog .category-blog {
+  position: relative;
+}
+#blog .content-blog .category-blog p{
+  margin: 4px;
+}
+#blog .content-blog .category-blog a{
+  color: #3e8d67;
+  font-size: small;
+}
+
+#blog .content-blog .category-blog a:hover{
+  color: #48ca8b;
+  text-decoration: underline;
+}
+/* Blog-Page 
+--------------------------------*/
+.blog .section-title{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Testimonials Section
@@ -873,7 +914,7 @@ section {
 }
 
 #testimonials .testimonials-content>h2 {
-  font-family: "Roboto"sans-serif;
+  font-family: 'Roboto',sans-serif;
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -1081,8 +1122,19 @@ section {
   }
 }
 /*--------------------------------------------------------------
-# Kemitraan
+# Kemitraan-Page
 --------------------------------------------------------------*/
+@media (max-width:991px){
+  .kemitraan .first{
+    margin-top: 3.5em;
+  }
+}
+.kemitraan .first {
+  margin-top: 2px;
+}
+/* .kemitraan{
+  padding: 3em 0 !im;
+} */
 .kemitraan .section-title{
   padding-top: 10px;
   margin-bottom: 10px;
@@ -1090,7 +1142,7 @@ section {
   justify-content: center;
 }
 /* .kemitraan .section-title h2{
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -1119,7 +1171,17 @@ section {
   display: flex;
   align-items: center;
 }
-
+.kemitraan .title-kemitraan{
+  font-family: 'Noto Sans Mono', monospace;
+}
+.kemitraan .deskripsi-kemitraan{
+  font-family: 'Lato', sans-serif;
+}
+@media (max-width:767px) {
+  .title-kemitraan{
+    margin: 1em 0 !important;
+  } 
+}
 /*--------------------------------------------------------------
 # Detail Kemitraan
 --------------------------------------------------------------*/
@@ -1188,7 +1250,7 @@ section {
   }
 }
 /*--------------------------------------------------------------
-# Produk
+# Produk-Page
 --------------------------------------------------------------*/
 .produk {
   display: inline-block;
@@ -1208,7 +1270,6 @@ section {
   transition: all 0.5s ease-in-out 0s;
   border-radius: 7px;
   box-shadow: 15px 15px 35px 15px rgba(213, 216, 220, 0.3);
-  /* position: relative; */
 }
 .produk .produk-block img {
   height: auto;
@@ -1227,19 +1288,30 @@ section {
 }
 .produk .produk-block .produk-name {
   margin-bottom: 0px;
+  /* font-family: 'Gelasio', serif; */
+  font-family: 'Noto Sans Mono', monospace;
 }
 .produk .produk-block .produk-category {
   margin-bottom: 0;
   font-size: small;
-  font-family: 'Gelasio', serif;
+  font-family: 'Lato', sans-serif;
+}
+.produk .produk-block .produk-category .category-link {
+  color: #3B837C;
+  /* z-index: 2;
+  position: relative; */
+}
+.produk .produk-block .produk-category .category-link:hover {
+  color: #58b3a9;
 }
 .produk .produk-block .produk-harga {
   margin-bottom: 0;
-  font-family: 'Gelasio', serif;
+  font-family: 'Noto Sans Mono', monospace;
 }
-.produk .button{
+.produk .button-produk{
   padding-top: 10px;
-  /* position: static; */
+  /* z-index: 2;
+  position: relative; */
 }
 .produk .btn-learn-more {
   font-weight: 500;
@@ -1332,7 +1404,7 @@ section {
 .checkout {
   margin-top: 100px;
   background-color: #71c55d;
-  font-family: "Roboto";
+  font-family: 'Roboto',sans-serif;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   margin-bottom: 20px;
@@ -1382,7 +1454,7 @@ section {
   border: 1px solid #005427a0;
   border-radius: 5px;
   color: #005427a0;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 550;
   padding: 10px 24px;
