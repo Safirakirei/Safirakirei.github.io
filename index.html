@@ -12,18 +12,6 @@
     <link href="img/favicon.png" rel="icon" />
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oleo+Script&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Vendor CSS Files -->
     <link href="vendor/aos.css" rel="stylesheet" />
     <link href="vendor/bootstrap.min.css" rel="stylesheet" />
@@ -33,6 +21,8 @@
 
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font.css" />
+    <!-- <link rel="stylesheet" href="bootstrap-icons.css"> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
@@ -44,7 +34,7 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <div id="logo">
-          <h1>
+          <h1 class="title-web d-sm-block">
             <a href="index.html"><span>Wangine</span>Wedhus</a>
           </h1>
           <!-- Uncomment below if you prefer to use an image logo -->
@@ -55,27 +45,14 @@
           <!-- Nambahin tombol Login sama Register -->
           <ul>
             <li>
-              <a class="nav-link scrollto active" href="#hero">Beranda</a>
+              <a class="nav-link scrollto active" href="/index.html">Beranda</a>
             </li>
-            <li><a class="nav-link scrollto" href="#about-us">Kemitraan</a></li>
+            <li>
+              <a class="nav-link scrollto" href="/mitra.html">Kemitraan</a>
+            </li>
             <li><a class="nav-link scrollto" href="#layanan">Jual</a></li>
-            <li><a class="nav-link scrollto" href="#screenshots">Produk</a></li>
-            <li><a class="nav-link scrollto" href="#team">Blog</a></li>
-            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li> -->
-
+            <li><a class="nav-link scrollto" href="/produk.html">Produk</a></li>
+            <li><a class="nav-link scrollto" href="/blog.html">Blog</a></li>
             <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
             <li><a class="getstarted scrollto" href="#">Masuk</a></li>
             <li><a class="getstarted scrollto" href="#">Daftar</a></li>
@@ -99,8 +76,8 @@
           data-aos-delay="100"
           class="img-hero"
         />
-        <a href="#get-started" class="btn-get-started scrollto"
-          >Mulai Jelajahi</a
+        <a href="/produk.html" class="btn-get-started scrollto"
+          >Mulai Jelajahi Produk</a
         >
       </div>
     </section>
@@ -215,8 +192,20 @@
       </div>
     </section><!-- End Features Section -->
 
-    <!-- ======= Screenshots Section ======= -->
-    <section id="screenshots" class="padd-sectio text-center p-3" style="background-color: #EDF8EA;">
+
+      <!-- ======= gallery Section ======= -->
+      <section
+        id="gallery"
+        class="padd-section text-center py-4"
+        style="background-color: #edf8ea"
+      >
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+            <h2>Galeri Wangine Wedhus</h2>
+            <p class="separator">
+              Galeri Wangine Wedhus merupakan dokumentasi kegiatan
+            </p>
+          </div>
 
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center">
@@ -267,8 +256,8 @@
           <div class="section-title text-center">
             <h2>Blog Wangine Wedhus</h2>
             <p class="separator">
-              Artikel Wangine Wedhus merupakan salah satu konten untuk berbagi
-              ilmu seputar ternak kambing
+              Blog Wangine Wedhus merupakan salah satu konten untuk berbagi ilmu
+              seputar ternak kambing
             </p>
           </div>
 
@@ -302,7 +291,9 @@
               </div>
             </div>
           </div>
-          <a href="#" class="btn-learn-more">Lihat Lebih Banyak Blog</a>
+          <a href="./blog.html" class="btn-learn-more"
+            >Lihat Lebih Banyak Blog</a
+          >
         </div>
       </section>
       <!-- End Blog Section -->
@@ -404,7 +395,9 @@
                 </div>
               </div>
 
-              <a href="#" class="btn-learn-more">Lihat Lebih Banyak Testimonial</a>
+              <a href="#" class="btn-learn-more"
+                >Lihat Lebih Banyak Testimonial</a
+              >
             </div>
           </div>
         </div>
@@ -417,8 +410,8 @@
           <div class="section-title text-center">
             <h2>Kontak</h2>
             <p class="separator">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque
+              Punya pertanyaan, permasalahan, atau saran? Kami akan sangat
+              senang dapat mendengarnya dari Anda.
             </p>
           </div>
 
@@ -558,11 +551,12 @@
               <h4>Layanan Kami</h4>
               <ul>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">Kemitraan</a>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="/mitra.html">Kemitraan</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
-                  <a href="#">Layanan Jual Domba/Kambing</a>
+                  <a href="#layanan">Layanan Jual Domba/Kambing</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
@@ -588,15 +582,14 @@
             </div>
 
             <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
+              <h4>Berlangganan Artikel Wangine Wedhus</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                Mendapatakan email terbaru artikel Wangine Wedhus secara gratis.
               </p>
               <form action="" method="post">
                 <input type="email" name="email" /><input
                   type="submit"
-                  value="Subscribe"
+                  placeholder="Masukan Alamat Email"
                 />
               </form>
             </div>
