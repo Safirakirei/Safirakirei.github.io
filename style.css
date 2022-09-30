@@ -633,6 +633,7 @@ section {
   background-repeat: no-repeat;
   background-size: auto;
   padding: 120px 0;
+  background-size: cover;
 }
 .aboutus h3 {
   color: hsla(117, 23%, 16%, 0.907);
@@ -1194,8 +1195,18 @@ section {
 /*--------------------------------------------------------------
 # Detail Kemitraan
 --------------------------------------------------------------*/
+.form-check-input:focus {
+  border-color:#377e5c;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 253, 137, 0.25);
+}
+.form-check-input:checked {
+  background-color: #2d575f;
+  border-color: #2d575f;
+}
 .checkout .deksmit h3{
   font-size: 20px;
+  margin-bottom: 7px;
 }
 .checkout .checkoutbox .checkoutboxx h6{
   margin-top: 10px;
@@ -1214,6 +1225,17 @@ section {
 .checkout .checkoutbox .checkoutboxx .row .deskmit p{
   display: flex;
   font-size: larger;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: calc(1vw);
+}
+.d-inline.input-group.w-auto.justify-content-end.align-items-center{
+  margin-left: 10px;
+}
+.jumlah{
+  margin-bottom: 20px;
+  font-size: small;
 }
 .checkout .checkoutbox .checkoutboxx .row .btn {
   border: 1px solid #71c55d;
@@ -1238,6 +1260,9 @@ section {
   margin: 5px;
 }
 @media (max-width: 400px) {
+  .jumlah{
+    margin-bottom: 5px;
+  }
   .checkout .checkoutbox .checkoutboxx .row .deskmit{
     display: none;
   }
@@ -1250,6 +1275,10 @@ section {
   }
   .checkout .checkoutbox .checkoutboxx .row .deskmitc p{
     font-size: 18px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-top: 5px;
   }
   .checkout .checkoutbox .checkoutboxx .row .deskmitc .col{
     display: flex;
@@ -1412,26 +1441,35 @@ section {
 --------------------------------------------------------------*/
 .checkout {
   margin-top: 100px;
-  background-color: #71c55d;
   font-family: 'Roboto',sans-serif;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f5fff3;
   border-radius: 3px;
   margin-bottom: 20px;
 }
 .checkout .checkoutbox {
   margin: 10px;
+  background-color: #fff;
   padding: 1px;
-  background-color: #fafff9;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .checkout .checkoutbox .checkoutboxx {
   margin: 10px;
 }
 .checkout .checkoutbox .checkoutboxx img{
+  max-width: 380px;
   width: calc(25vw);
+  object-fit: contain;
 }
 .checkout .checkoutbox .checkoutboxx p{
-  display: inline;
-  padding: calc(4vw);
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+.checkout .checkoutbox .checkoutboxx .container{
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
 }
 .checkout .checkoutbox .checkoutboxx .list-group{
   display: contents;
@@ -1472,6 +1510,21 @@ section {
 }
 .btn-bayar:hover {
   background-color: #005427a0;
+  color: #fff;
+}
+.checkout .checkoutbox .checkoutboxx .row .btn-danger {
+  border: 1px solid #c55d5d;
+  border-radius: 10px;
+  background-color: #a85050;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: none;
+  transition: all 0.5s ease-in-out 0s;
+  width: 30px;
+  height: 35px;
+  padding-left: 7px;
+}
+.checkout .checkoutbox .checkoutboxx .row .bi{
   color: #fff;
 }
 

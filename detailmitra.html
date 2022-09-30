@@ -75,7 +75,7 @@
         <div class="checkoutbox">
           <div class="checkoutboxx">
             <div class="row d-flex align-items-center">
-              <div class="col">
+              <div class="col d-flex justify-content-center">
                 <img
                   src="img/apple-touch-icon.png"
                   alt=""
@@ -85,7 +85,15 @@
               <div class="deskmitc">
                 <h3>Kemitraan Mandiri</h3>
                 <h5>Kemitraan</h5>
-                <p>Rp. (Harga)</p>
+                <p class="d-flex">Rp. (Harga)</p>
+                <div class="jumlah d-flex align-items-baseline">
+                  <p class="d-inline">Kuantitas </p>
+                  <div class="d-inline input-group w-auto justify-content-end align-items-center">
+                    <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                    <input type="number" step="1" max="10" min="1" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                    <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col">
                     <div class="btn">Masukkan Keranjang</div>
@@ -103,7 +111,15 @@
               <div class="col deskmit">
                 <h3>Kemitraan Mandiri</h3>
                 <h5>Kemitraan</h5>
-                <p>Rp. (Harga)</p>
+                <p style="margin-bottom: 15px;">Rp. (Harga)</p>
+                <div class="jumlah">
+                  <p class="d-inline">Kuantitas </p>
+                  <div class="d-inline input-group w-auto justify-content-end align-items-center">
+                    <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                    <input type="number" step="1" max="10" min="1" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                    <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col">
                     <div class="btn">Masukkan Keranjang</div>
@@ -120,8 +136,10 @@
               </div>
             </div>
             <h6>
-              Share: <i href="" class="bi bi-link-45deg"></i>
-              <i href="" class="bi bi-share"></i>
+              Share:
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
             </h6>
           </div>
         </div>
