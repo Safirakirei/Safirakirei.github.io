@@ -189,13 +189,6 @@
   });
 
   /**
-   * Initiate  glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -206,12 +199,10 @@
       mirror: false
     })
   });
-    /**
-     * Initiate portfolio lightbox 
-     */
-    const portfolioLightbox = GLightbox({
-      selector: '.portfolio-lightbox'
-    });
+
+    var lightboxDescription = GLightbox({
+      selector: '.glightbox2'
+  });
   
     /**
      * Portfolio details slider

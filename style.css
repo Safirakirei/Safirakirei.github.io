@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #fff;
+  background-color: #fffefe;
   color: #333;
 }
 
@@ -447,17 +447,20 @@ span {
   display: block;
 }
 
+#main{
+  min-height: 90vh;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(img/hero-bg.png) center bottom no-repeat;
-  background-size: 100%;
   position: relative;
   margin-top: 40px;
 }
+
 
 @media (min-width: 1025px) {
   #hero {
@@ -490,9 +493,17 @@ span {
   text-align: center;
 }
 
-#hero h1 {
+#hero h1{
   margin: 0 0 10px 0;
   font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  font-family: 'Gelasio', serif;
+  color: #43b327;
+}
+#hero h3{
+  margin: 0 0 10px 0;
+  font-size: 39px;
   font-weight: 700;
   line-height: 56px;
   font-family: 'Gelasio', serif;
@@ -527,7 +538,7 @@ span {
   margin-bottom: 30px;
 }
 
-#hero .btn-get-started {
+.btn-get-started {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -544,8 +555,29 @@ span {
   text-decoration: none;
 }
 
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: #71c55d;
+  color: #fff;
+}
+
+.btn-get-cancel {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 11px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  border: 2px solid #924831;
+  background: #fff;
+  color: #d35810;
+  text-decoration: none;
+}
+.btn-get-cancel:hover {
+  background: #af4804;
   color: #fff;
 }
 
@@ -808,11 +840,12 @@ section {
 #blog .block-blog{
   border:none;
   margin-bottom: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #blog .block-blog:hover{
   
   background: rgb(255, 255, 255) none repeat scroll 0 0;
-  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   transform: translateY(-5px);
   transition: all 0.5s ease-in-out 0s;
   border:1px solid #b8e3b3; 
@@ -1166,12 +1199,14 @@ section {
   background-color: #EDF8EA;
   padding: 10px;
   margin-bottom: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .kemitraan .elemen2{
   border: 2px solid #72c55db3;
   padding: 10px;
   margin-bottom: 40px;
   direction: rtl;
+  border-radius: 7px;
 }
 .kemitraan .btn-learn-more{
   margin-top: 0px;
@@ -1258,6 +1293,20 @@ section {
     margin: 5px;
   }
 }
+
+
+/*
+Jual-Page
+*/
+.form-jual{
+  /* background: rgb(255, 255, 255) none repeat scroll 0 0; */
+  /* border: 0.5px solid black; */
+  transition: all 0.5s ease-in-out 0s;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
 /*--------------------------------------------------------------
 # Produk-Page
 --------------------------------------------------------------*/
