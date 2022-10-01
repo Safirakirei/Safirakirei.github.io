@@ -18,7 +18,6 @@
     <link href="vendor/bootstrap-icons.css" rel="stylesheet" />
     <link href="vendor/glightbox.min.css" rel="stylesheet" />
     <link href="vendor/swiper-bundle.min.css" rel="stylesheet" />
-
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="font.css" />
@@ -27,6 +26,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   </head>
 
   <body>
@@ -50,7 +50,7 @@
             <li>
               <a class="nav-link scrollto" href="mitra.html">Kemitraan</a>
             </li>
-            <li><a class="nav-link scrollto" href="#layanan">Jual</a></li>
+            <li><a class="nav-link scrollto" href="jual.html">Jual</a></li>
             <li><a class="nav-link scrollto" href="produk.html">Produk</a></li>
             <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
             <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
@@ -65,7 +65,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <section id="hero" class="home-page">
       <div class="hero-container" data-aos="fade-in">
         <h1>Wangine Wedhus</h1>
         <h2>Perusahaan Ternak Kambing dan Domba terpecaya di jawa timur</h2>
@@ -91,11 +91,13 @@
             <h3>Tentang Wangine Wedhus</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
-              eveniet nisi soluta pariatur officiis nulla, consequatur
+              eveniet nisi soluta pariatur offi ciis nulla, consequatur
               recusandae ipsa? Quae nesciunt eveniet exercitationem, dolorum
               necessitatibus temporibus quasi fuga eius facere reiciendis?
             </p>
-            <h5>- Wengine Wedhus -</h5>
+            <figcaption class="blockquote-footer">
+              <cite title="Source Title" style="color: black;">Wangine Wedhus</cite>
+            </figcaption>
           </div>
         </div>
       </section>
@@ -179,19 +181,23 @@
               </div>
             </div>
 
-          <div class="col-md-6 col-lg-3">
-            <div class="feature-block">
-              <img src="img/layanan/pay.jpg" alt="img">
-              <h4>Layanan Beli Domba/Kambing</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-block">
+                <img src="img/layanan/pay.jpg" alt="img" />
+                <h4>Layanan Beli Domba/Kambing</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry
+                </p>
+              </div>
             </div>
           </div>
-
+          <a href="produk.html" class="btn-learn-more"
+            >Lihat Lebih Banyak Layanan</a
+          >
         </div>
-        <a href="#" class="btn-learn-more">Lihat Lebih Banyak Layanan</a>
-      </div>
-    </section><!-- End Features Section -->
-
+      </section>
+      <!-- End Features Section -->
 
       <!-- ======= gallery Section ======= -->
       <section
@@ -206,42 +212,49 @@
               Galeri Wangine Wedhus merupakan dokumentasi kegiatan
             </p>
           </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-md-6 col-lg-4 block-blog">
-            <div class="team-block bottom">
-              <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" id="myImg" title="Judul Gambar 1" src="img/blog/blog-image-1.jpg" class="img-responsive" alt="img">
-              <div class="team-content">
-                <span>Judul Gambar</span>
-                <h4>Tempat dan tanggal</h4>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6 col-lg-4 block-blog">
+              <div class="team-block bottom">
+                <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="glightbox2 portfolio-lightbox"  id="myImg" title="Judul Gambar 2" src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img" data-glightbox='title:Description Bottom; description: You can set the position of the description &lt;a href="http://google.com"&gt;with a link to Google&lt;/a&gt;'>
+                <div class="team-content">
+                  <span>Judul Gambar</span>
+                  <h4>Tempat dan tanggal</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 block-blog">
+              <div class="team-block bottom">
+                <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="glightbox2 portfolio-lightbox"  id="myImg" title="Judul Gambar 2" src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img" data-glightbox='title:Description Bottom; description: You can set the position of the description &lt;a href="http://google.com"&gt;with a link to Google&lt;/a&gt;'>
+                <div class="team-content">
+                  <span>Judul Gambar</span>
+                  <h4>Tempat dan tanggal</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 block-blog">
+              <div class="team-block bottom">
+                <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="glightbox2 portfolio-lightbox"  id="myImg" title="Judul Gambar 2" src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img" data-glightbox='title:Description Bottom; description: You can set the position of the description &lt;a href="http://google.com"&gt;with a link to Google&lt;/a&gt;'>
+                <div class="team-content">
+                  <span>Judul Gambar</span>
+                  <h4>Tempat dan tanggal</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-none block-blog">
+              <div class="team-block bottom">
+                <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="glightbox2 portfolio-lightbox"  id="myImg" title="Judul Gambar 2" src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img" data-glightbox='title:Description Bottom; description: You can set the position of the description &lt;a href="http://google.com"&gt;with a link to Google&lt;/a&gt;'>
+                <div class="team-content">
+                  <span>Judul Gambar</span>
+                  <h4>Tempat dan tanggal</h4>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-4 block-blog">
-            <div class="team-block bottom">
-              <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" id="myImg" title="Judul Gambar 2" src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img">
-              <div class="team-content">
-                <span>Judul Gambar</span>
-                <h4>Tempat dan tanggal</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 block-blog">
-            <div class="team-block bottom">
-              <img href="img/blog/blog-image-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" id="myImg" title="Judul Gambar 3" src="img/blog/blog-image-3.jpg" class="img-responsive" alt="img">
-              <div class="team-content">
-                <span>Judul Gambar</span>
-                <h4>Tempat dan tanggal</h4>
-              </div>
-            </div>
-          </div>
-
+          <a href="galeri.html" class="btn-learn-more">Lihat Lebih Banyak</a>
         </div>
-        <a href="#" class="btn-learn-more">Lihat Lebih Banyak</a>
-      </div>
-
-    </section><!-- End Screenshots Section -->
+      </section>
+      <!-- End Screenshots Section -->
 
       <!-- ======= Blog Section ======= -->
       <section id="blog" class="padd-section">
@@ -254,49 +267,125 @@
             </p>
           </div>
 
-          <div class=" row" data-aos="fade-up" data-aos-delay="100">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-md-6 col-lg-4 mb-2">
               <div class="card block-blog p-1">
-                <img src="img/blog/blog-image-1.jpg" class="card-img-top" alt="img"/>
+                <img
+                  src="img/blog/blog-image-1.jpg"
+                  class="card-img-top"
+                  alt="img"
+                />
                 <div class="content-blog">
-                  <div class="category-blog" style="position: relative; z-index: 2;">
-                    <a href="blogByCategory">Susu</a>
+                  <div
+                    class="category-blog"
+                    style="position: relative; z-index: 2"
+                  >
+                    <a href="#">Susu</a>
                   </div>
                   <h4 class="mt-2 fs-5">
                     <a href="#">Makan Rutin Kambing</a>
                   </h4>
-                  <span>Diunggah Pada: 17-08-2022</span>
+                  <span
+                    ><p class="d-md-inline d-sm-none">Diunggah Pada:</p>
+                    17-08-2022</span
+                  >
                   <a class="float-end readmore" href="#">Selengkapnya...</a>
                 </div>
                 <div>
-                  <a class="stretched-link" href="/hello.html"></a>
+                  <a class="stretched-link" href="detailblog.html"></a>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-2">
               <div class="card block-blog p-1">
-                <img src="img/blog/blog-image-1.jpg" class="card-img-top" alt="img"/>
+                <img
+                  src="img/blog/blog-image-1.jpg"
+                  class="card-img-top"
+                  alt="img"
+                />
                 <div class="content-blog">
-                  <div class="category-blog" style="position: relative; z-index: 2;">
-                    <a href="blogByCategory">Susu</a>
+                  <div
+                    class="category-blog"
+                    style="position: relative; z-index: 2"
+                  >
+                    <a href="#">Susu</a>
                   </div>
                   <h4 class="mt-2 fs-5">
                     <a href="#">Makan Rutin Kambing</a>
                   </h4>
-                  <span>Diunggah Pada: 17-08-2022</span>
+                  <span
+                    ><p class="d-md-inline d-sm-none">Diunggah Pada:</p>
+                    17-08-2022</span
+                  >
                   <a class="float-end readmore" href="#">Selengkapnya...</a>
                 </div>
                 <div>
-                  <a class="stretched-link" href="/hello.html"></a>
+                  <a class="stretched-link" href="detailblog.html"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-2">
+              <div class="card block-blog p-1">
+                <img
+                  src="img/blog/blog-image-1.jpg"
+                  class="card-img-top"
+                  alt="img"
+                />
+                <div class="content-blog">
+                  <div
+                    class="category-blog"
+                    style="position: relative; z-index: 2"
+                  >
+                    <a href="#">Susu</a>
+                  </div>
+                  <h4 class="mt-2 fs-5">
+                    <a href="#">Makan Rutin Kambing</a>
+                  </h4>
+                  <span
+                    ><p class="d-md-inline d-sm-none">Diunggah Pada:</p>
+                    17-08-2022</span
+                  >
+                  <a class="float-end readmore" href="#">Selengkapnya...</a>
+                </div>
+                <div>
+                  <a class="stretched-link" href="detailblog.html"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-none mb-2">
+              <div class="card block-blog p-1">
+                <img
+                  src="img/blog/blog-image-1.jpg"
+                  class="card-img-top"
+                  alt="img"
+                />
+                <div class="content-blog">
+                  <div
+                    class="category-blog"
+                    style="position: relative; z-index: 2"
+                  >
+                    <a href="#">Susu</a>
+                  </div>
+                  <h4 class="mt-2 fs-5">
+                    <a href="#">Makan Rutin Kambing</a>
+                  </h4>
+                  <span
+                    ><p class="d-md-inline d-sm-none">Diunggah Pada:</p>
+                    17-08-2022</span
+                  >
+                  <a class="float-end readmore" href="#">Selengkapnya...</a>
+                </div>
+                <div>
+                  <a class="stretched-link" href="detailblog.html"></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="text-center">
-          <a href="./blog.html" class="btn-learn-more"
-            >Lihat Lebih Banyak Blog</a
-          >
-        </div>
+            <a href="./blog.html" class="btn-learn-more"
+              >Lihat Lebih Banyak Blog</a
+            >
+          </div>
         </div>
       </section>
       <!-- End Blog Section -->
@@ -519,7 +608,7 @@
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= --> 
     <footer class="footer">
       <div class="footer-top">
         <div class="container">
@@ -633,7 +722,6 @@
     <script src="vendor/glightbox.min.js"></script>
     <script src="vendor/swiper-bundle.min.js"></script>
     <!-- <script src="vendor/validate.js"></script> -->
-
     <!-- Template Main JS File -->
     <script src="main.js"></script>
   </body>

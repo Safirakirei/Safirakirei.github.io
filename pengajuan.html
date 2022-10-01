@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Wangine Wedhus</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos.css" rel="stylesheet" />
+    <link href="vendor/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="vendor/bootstrap-icons.css" rel="stylesheet" /> -->
+    <link href="vendor/glightbox.min.css" rel="stylesheet" />
+    <link href="vendor/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font.css" />
+    <!-- <link rel="stylesheet" href="bootstrap-icons.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div id="logo">
+          <h1 class="title-web d-sm-block">
+            <a href="index.html"><span>Wangine</span>Wedhus</a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="img/logo.png" alt="" title="" /></a> -->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <!-- Nambahin tombol Login sama Register -->
+          <ul>
+            <li>
+              <a class="nav-link scrollto" href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="mitra.html">Kemitraan</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto active" href="jual.html">Jual</a>
+            </li>
+            <li><a class="nav-link scrollto" href="produk.html">Produk</a></li>
+            <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+            <li><a class="getstarted scrollto" href="#">Masuk</a></li>
+            <li><a class="getstarted scrollto" href="#">Daftar</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+      <div class="padd-section">
+        <div class="container kemitraan" data-aos="fade-up">
+          <div class="section-title d-none d-lg-block text-center">
+            <h2>Jual Ternak</h2>
+          </div>
+          <!-- <div class="information-in-page mb-3">
+            <div class="alert alert-danger" role="alert">
+              Untuk melakukan pengajuan penjualan anda di haruskan login
+            </div>
+            <div class="alert alert-info" role="alert">
+                <h4 class="status-pengejuan d-inline">Status Pengajuan :  </h4> <b><i>Di Ajukan</i></b>
+            </div>
+            <div class="alert alert-warning" role="alert">
+              <div class="d-flex justify-content-center">
+                <ul>
+                  <li><h5>nama wajib di isi</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="form-jual">
+            <form class="p-3">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Nama Pemohon"
+                  autofocus
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="no_hp" class="form-label">Nomor Handphone</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="no_hp"
+                  placeholder="0895********"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="jenis_ternak" class="form-label"
+                  >Jenis Ternak</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected>--Pilih Hewan Ternak--</option>
+                  <option value="kambing">Kambing</option>
+                  <option value="domba">Domba</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col mb-3">
+                  <label for="jumlah_ternak" class="form-label"
+                    >Jumlah Ternak</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="jumlah_ternak"
+                    placeholder="50"
+                    required
+                  />
+                </div>
+                <div class="col mb-3">
+                  <label for="berat_rata" class="form-label"
+                    >Berat Rata - Rata Ternak (KG)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="berat_rata"
+                    placeholder="60"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col mb-3">
+                  <label for="provinsi" class="form-label"
+                    >Alamat Provinsi</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="provinsi"
+                    placeholder="Jawa Timur"
+                    required
+                  />
+                </div>
+                <div class="col mb-3">
+                  <label for="Kota" class="form-label">Alamat Kota</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Kota"
+                    placeholder="Kota Kediri"
+                    required
+                    autocapitalize="sentences"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="alamat_penjemputan" class="form-label"
+                  >Detail Alamat penjemputan Ternak</label
+                >
+                <textarea
+                  class="form-control"
+                  id="alamat_penjemputan"
+                  rows="3"
+                  aria-describedby="alamat_penjemputan"
+                  placeholder="RT. xx RW. xx Dsn. "
+                ></textarea>
+                <div id="alamat_penjemputan" class="form-text">
+                  <b>Alamat harap di isi selengkap mungkin</b>
+                </div>
+              </div>
+              <div class="my-3 form-check">
+                <input type="checkbox" class="form-check-input" id="syarat" />
+                <label class="form-check-label" for="syarat"
+                  >saya menyetujui <a href="">Syarat</a> dan
+                  <a href="">ketentuan</a> yang berlaku</label
+                >
+              </div>
+              <div class="d-flex justify-content-evenly">
+                  <button type="submit" class="btn-get-started">
+                    Ajukan Penjualan
+                  </button>
+                
+                  <button type="button" class="btn-get-cancel">
+                    Batalkan Penjualan
+                  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Bikin</span></strong
+            >. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox.min.js"></script>
+    <script src="vendor/swiper-bundle.min.js"></script>
+    <!-- <script src="vendor/validate.js"></script> -->
+
+    <!-- Template Main JS File -->
+    <script src="main.js"></script>
+  </body>
+</html>
