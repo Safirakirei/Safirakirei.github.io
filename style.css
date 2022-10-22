@@ -1259,7 +1259,7 @@ section {
   align-items: center;
   margin: 5px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .jumlah{
     margin-bottom: 5px;
   }
@@ -1524,6 +1524,10 @@ section {
   height: 35px;
   padding-left: 7px;
 }
+.checkout .checkoutbox .checkoutboxx .row .btn-danger:hover {
+  border: 1px solid #c55d5d;
+  background-color: #633636;
+}
 .checkout .checkoutbox .checkoutboxx .row .bi{
   color: #fff;
 }
@@ -1586,6 +1590,151 @@ section {
   width: 17px;
   background-color: #eee;
 } */
+
+/*--------------------------------------------------------------
+# Profile
+--------------------------------------------------------------*/
+.box {
+  margin-top: 100px;
+  font-family: 'Roboto',sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 14px 0px;
+  background-color: #f5fff3;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+#profile .box .row {
+  margin: 10px;
+  padding: 1px;
+}
+#profile .box .row .col-4, #profile .box .row .col-7, #profile .box .row .col{
+  margin: 5px;
+  background-color: #fff;
+  padding: 3px;
+  padding-left: 7px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
+#profile .box .row .col-4{
+  height: fit-content;
+}
+#profile .box .row .col-4 img{
+  max-width: inherit;
+  border-radius: 15px;
+  padding: 15px;
+}
+#profile .box .row .col-7{
+  padding: 15px;
+}
+#profile .box .row .col-7 h3{
+  padding: 1vw;
+  font-size: max(18px, min(2vw, max(30px, 1.5vw)));
+}
+#profile .box .row .probtn{
+  background: #71c55d;
+  color: #fff;
+  border: 2px solid #71c55d;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#profile .box .row .probtn:hover{
+  background: #5c9f4b;
+  border: 2px solid #5c9f4b;
+  text-decoration: none;
+}
+#profile .box .row .col{
+  max-width: 160px;
+  transition: all 0.5s ease-in-out 0s;
+}
+#profile .box .row .col:hover{
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.5s ease-in-out 0s;
+}
+#profile .box .row .col img{
+  max-width: 100px;
+  border-radius: 15px;
+  padding: 15px;
+}
+#profile .box .row .col h4{
+  text-align: center;
+  line-height: inherit;
+}
+
+@media (max-width: 500px) {
+  #profile .pp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  #profile .pp .col-4{
+    width: 50vw;
+  }
+  #profile .pp .col-7{
+    width: 95vw;
+  }
+  #profile .box .row .col img{
+    max-width: 80px;
+  }
+  #profile .box .row .col{
+    max-width: 125px;
+  }
+}
+
+/*--------------------------------------------------------------
+# History Pemesanan
+--------------------------------------------------------------*/
+#history .box .pp {
+  margin: 10px;
+  padding: 1px;
+}
+#history .box .pp{
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+}
+#history .box .row .row{
+  padding-bottom: 10px;
+}
+#history .box .row .row h4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#history .box .row .probtn{
+  margin: 0px;
+  background: #71c55d;
+  color: #fff;
+  border: 2px solid #71c55d;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#history .box .row .probtn:hover{
+  background: #5c9f4b;
+  border: 2px solid #5c9f4b;
+  text-decoration: none;
+}
+#history .box .row .invoice{
+  margin-top: 5px;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out 0s;
+}
+#history .box .row .invoice:hover{
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.201) inset;
+  transform: translateY(5px);
+  transition: all 0.5s ease-in-out 0s;
+}
+#history .box .row .col h4{
+  text-align: center;
+  line-height: inherit;
+}
+
+@media (max-width: 500px) {
+  #history .pp .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
