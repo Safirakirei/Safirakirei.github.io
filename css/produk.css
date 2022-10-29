@@ -1,0 +1,106 @@
+.produk {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.produk .section-title {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.produk .produk-block {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out 0s;
+  border-radius: 7px;
+  box-shadow: 15px 15px 35px 15px rgba(213, 216, 220, 0.3);
+}
+.produk .produk-block img {
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.produk .text {
+  text-align: start;
+}
+.produk .produk-block:hover {
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.5s ease-in-out 0s;
+  border: 1px solid #b8e3b3;
+}
+.produk .produk-block .produk-name {
+  margin-bottom: 0px;
+  font-family: "Noto Sans Mono", monospace;
+}
+.produk .produk-block .produk-category {
+  margin-bottom: 0;
+  font-size: small;
+  font-family: "Lato", sans-serif;
+}
+.produk .produk-block .produk-category .category-link {
+  color: #53612d;
+  /* z-index: 2;
+    position: relative; */
+}
+.produk .produk-block .produk-category .category-link:hover {
+  color: #778a41;
+}
+.produk .produk-block .produk-harga {
+  margin-bottom: 0;
+  font-size: medium;
+  font-family: "Noto Sans Mono", monospace;
+}
+.produk .button-produk {
+  padding-top: 10px;
+  /* z-index: 2;
+    position: relative; */
+}
+.produk .btn-keranjang {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #71c55d;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 20px;
+  border: 2px solid #71c55d;
+  background-color: #e6f1e3;
+}
+
+.produk .btn-keranjang:hover {
+  background: #f2faf0;
+  text-decoration: none;
+}
+.produk .btn-checkout {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #ffffff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 20px;
+  border: 2px solid #71c55d;
+  background-color: #71c55d;
+}
+.produk .btn-checkout:hover {
+  background: #78cf62;
+}
+.produk .produk-block a{
+  /* margin-top: 0px;
+  font-size: medium; */
+  letter-spacing: 2px !important;
+  /* padding:  5px; */
+}

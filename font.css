@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   src: url('fonts/Roboto/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -16,7 +16,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   src: url('fonts/Roboto/roboto-v30-latin-italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -30,7 +30,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 500;
   src: url('fonts/Roboto/roboto-v30-latin-500.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -44,7 +44,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 500;
   src: url('fonts/Roboto/roboto-v30-latin-500italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -58,7 +58,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src: url('fonts/Roboto/roboto-v30-latin-700.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -72,7 +72,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src: url('fonts/Roboto/roboto-v30-latin-700italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -86,7 +86,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 900;
   src: url('fonts/Roboto/roboto-v30-latin-900.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -100,7 +100,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 900;
   src: url('fonts/Roboto/roboto-v30-latin-900italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -115,7 +115,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -129,7 +129,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -143,7 +143,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 500;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-500.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -157,7 +157,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 500;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-500italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -171,7 +171,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 600;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-600.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -185,7 +185,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 600;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-600italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -199,7 +199,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-700.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -213,7 +213,7 @@
 @font-face {
   font-family: 'Gelasio';
   font-style: italic;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src: url('fonts/Gelasio/gelasio-v10-vietnamese_latin-ext_latin-700italic.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -229,7 +229,7 @@
 @font-face {
   font-family: 'Oleo Script';
   font-style: normal;
-  font-display: fallback;  
+  font-display: swap;  
   font-weight: 400;
   src: url('fonts/Oleo-Script/oleo-script-v14-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -243,7 +243,7 @@
 @font-face {
   font-family: 'Oleo Script';
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src: url('fonts/Oleo-Script/oleo-script-v14-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -258,6 +258,7 @@
 @font-face {
   font-family: 'Noto Sans Mono';
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url('fonts/Noto-Sans-Mono/noto-sans-mono-v20-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -271,6 +272,7 @@
 @font-face {
   font-family: 'Noto Sans Mono';
   font-style: normal;
+  font-display: swap;
   font-weight: 500;
   src: url('fonts/Noto-Sans-Mono/noto-sans-mono-v20-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.eot'); /* IE9 Compat Modes */
   src: local(''),
@@ -279,4 +281,18 @@
        url('fonts/Noto-Sans-Mono/noto-sans-mono-v20-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.woff') format('woff'), /* Modern Browsers */
        url('fonts/Noto-Sans-Mono/noto-sans-mono-v20-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/Noto-Sans-Mono/noto-sans-mono-v20-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.svg#NotoSansMono') format('svg'); /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/lato/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/lato/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/lato/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/lato/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }

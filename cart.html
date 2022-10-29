@@ -15,7 +15,9 @@
       as="script"
     />
     <link rel="preload" href="vendor/swiper-bundle.min.css" as="style" />
+    <link rel="preload" href="vendor/aos.css" as="style" />
     <link rel="preload" href="vendor/swiper-bundle.min.js" as="script" />
+    <link rel="preload" href="vendor/aos.js" as="script" />
     <link rel="preload" href="main.js" as="script" />
 
     <!-- Favicons -->
@@ -29,12 +31,17 @@
 
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet" />
-    <link href="font.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/jual.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="css/cart.css" />
 
     <link rel="stylesheet" href="vendor/bootstrap-icons.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script async src="vendor/jquery.zoom.js"></script>
+    <script src="vendor/jquery.zoom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#zoom").zoom();
+      });
+    </script>
   </head>
 
   <body>
@@ -69,14 +76,12 @@
           <!-- Nambahin tombol Login sama Register -->
           <ul>
             <li>
-              <a class="nav-link scrollto" href="index.html">beranda</a>
+              <a class="nav-link scrollto active" href="index.html">beranda</a>
             </li>
             <li>
               <a class="nav-link scrollto" href="mitra.html">Kemitraan</a>
             </li>
-            <li>
-              <a class="nav-link scrollto active" href="jual.html">Jual</a>
-            </li>
+            <li><a class="nav-link scrollto" href="jual.html">Jual</a></li>
             <li><a class="nav-link scrollto" href="produk.html">Produk</a></li>
             <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
             <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
@@ -133,7 +138,7 @@
             </li>
 
             <li class="d-lg-none d-md-block">
-              <a class="getstarted scrollto" href="#"> Profile </a>
+              <a class="getstarted scrollto" href="profile.html"> Profile </a>
             </li>
             <li class="d-lg-none d-md-block">
               <a class="getstarted scrollto logout" href="#"> Logout </a>
@@ -145,189 +150,111 @@
       </div>
     </header>
     <!-- End Header -->
+
     <main id="main">
-      <div class="page padd-section">
-        <div class="container kemitraan">
-          <div class="section-title d-none d-lg-block text-center">
-            <h2 data-aos="fade-up">Jual Ternak</h2>
-          </div>
-          <!-- if have error -->
-          <!-- <div class="information-in-page mb-3">
-            <div class="alert alert-danger" role="alert">
-              Untuk melakukan pengajuan penjualan anda di haruskan login
-            </div>
-            <div class="alert alert-info" role="alert">
-                <h4 class="status-pengejuan d-inline">Status Pengajuan :  </h4> <b><i>Di Ajukan</i></b>
-            </div>
-            <div class="alert alert-warning" role="alert">
-              <div class="d-flex justify-content-center">
-                <ul>
-                  <li><h5>nama wajib di isi</h5></li>
-                </ul>
+      <div class="d-flex justify-content-center">
+        <div class="background-f5fff3 col-md-9">
+          <div class="backgorund-fff p-3" style="min-height: 500px">
+            <div class="cart-produk">
+              <div class="detail-produk row">
+                <div class="thumbnail-produk col-12 col-lg-6">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1664355811205-3939787c7abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""
+                    width="300px"
+                  />
+                </div>
+                <div class="meta-produk">
+                  <h4>Nama Produk</h4>
+                </div>
               </div>
             </div>
-          </div> -->
-
-          <div class="form-jual">
-            <form class="p-3">
-              <div class="row mb-3">
-                <div class="col">
-                  <label for="nama" class="form-label">Nama Penjual *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="nama"
-                    name="nama"
-                    placeholder="Nama penjual"
-                    autofocus
-                    required
-                    oninvalid="this.setCustomValidity('Nama Wajib Di isi')"
-                    oninput="this.setCustomValidity('')"
-                  />
-                </div>
-                <div class="col">
-                  <label for="no_hp" class="form-label"
-                    >Nomor Handphone *</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="no_hp"
-                    name="no_hp"
-                    placeholder="0895********"
-                    required
-                    oninvalid="this.setCustomValidity('Nama Wajib Di isi')"
-                    oninput="this.setCustomValidity('')"
-                    pattern="(\+62|62|0)8[0-9][0-9]{6,14}"
-                  />
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col">
-                  <label for="email" class="form-label"
-                    >Email (opsional)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    placeholder="wanginewedhus@gmail.com"
-                    name="email"
-                    required
-                    oninvalid="this.setCustomValidity('email salah format')"
-                    oninput="this.setCustomValidity('')"
-                  />
-                </div>
-                <div class="col ">
-                  <label for="jenis_ternak" class="form-label"
-                    >Jenis Ternak *</label
-                  >
-                  <select
-                    class="form-select"
-                    name="jenis_ternak"
-                    id="jenis_ternak"
-                    aria-label="Default select example"
-                    required
-                  >
-                    <option selected>--Pilih Hewan Ternak--</option>
-                    <option value="kambing">Kambing</option>
-                    <option value="domba">Domba</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col mb-3">
-                  <label for="jumlah_ternak" class="form-label"
-                    >Jumlah Ternak *</label
-                  >
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="jumlah_ternak"
-                    name="jumlah_ternak"
-                    placeholder="50"
-                    required
-                  />
-                </div>
-                <div class="col mb-3">
-                  <label for="berat_rata" class="form-label"
-                    >Berat Rata - Rata Ternak (KG) *</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="berat_rata"
-                    placeholder="60"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col mb-3">
-                  <label for="provinsi" class="form-label"
-                    >Alamat Provinsi *</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="provinsi"
-                    name="provinsi"
-                    placeholder="Jawa Timur"
-                    required
-                  />
-                </div>
-                <div class="col mb-3">
-                  <label for="kota" class="form-label">Alamat Kota *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="kota"
-                    name="kota"
-                    placeholder="Kota Kediri"
-                    required
-                    autocapitalize="sentences"
-                  />
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="alamat_penjemputan" class="form-label"
-                  >Detail Alamat penjemputan Ternak</label
-                >
-                <textarea
-                  class="form-control"
-                  id="alamat_penjemputan"
-                  name="alamat_penjemputan"
-                  rows="3"
-                  aria-describedby="alamat_penjemputan"
-                  placeholder="RT. xx RW. xx Dsn. "
-                ></textarea>
-                <div id="alamat_penjemputan" class="form-text">
-                  <b>Alamat harap di isi selengkap mungkin</b>
-                </div>
-              </div>
-              <div class="my-3 form-check">
-                <input type="checkbox" class="form-check-input" id="syarat" />
-                <label class="form-check-label" for="syarat"
-                  >saya menyetujui <a href="">Syarat</a> dan
-                  <a href="">ketentuan</a> yang berlaku</label
-                >
-              </div>
-              <div class="d-flex justify-content-evenly">
-                <button type="submit" class="btn-get-started">
-                  Ajukan Penjualan
-                </button>
-
-                <button type="button" class="btn-get-cancel">
-                  Batalkan Penjualan
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
     </main>
+
     <!-- ======= Footer ======= -->
     <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Bikin</h3>
+              <p>
+                Jalan ...... <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Narahubung:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Tautan Terkait</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Beranda</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Blog</a>
+                </li>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">About Us</a></li> -->
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li> -->
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Layanan Kami</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Kemitraan</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Layanan Jual Domba/Kambing</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Produksi Pakan</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Produksi Pupuk</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Layanan Aqiqah</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Layanan Qurban</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Layanan Beli Domba/Kambing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">

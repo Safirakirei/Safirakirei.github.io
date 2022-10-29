@@ -172,7 +172,7 @@
     speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 1000,
       disableOnInteraction: false,
     },
     slidesPerView: "auto",
@@ -206,15 +206,11 @@
    */
   window.addEventListener("load", () => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
       easing: "ease-in-out",
       once: true,
       mirror: false,
     });
-  });
-
-  var lightboxDescription = GLightbox({
-    selector: ".glightbox2",
   });
 
   /**
@@ -234,12 +230,3 @@
     },
   });
 })();
-$("body").append('<div class="loader">Loading...</div>');
-$(window).on("load", function () {
-  setTimeout(removeLoader, 2000);
-});
-function removeLoader() {
-  $(".loader").fadeOut(500, function () {
-    $(".loader").remove();
-  });
-}
