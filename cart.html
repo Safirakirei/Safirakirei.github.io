@@ -32,7 +32,8 @@
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="font.css" />
-    <link rel="stylesheet" href="css/detail-produk.css" />
+    <!-- <link rel="stylesheet" href="css/detail-produk.css" /> -->
+    <link rel="stylesheet" href="css/cart.css" />
 
     <link rel="stylesheet" href="vendor/bootstrap-icons.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -46,7 +47,10 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top d-flex align-items-center px-1 px-md-0">
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center px-1 px-md-0"
+    >
       <div class="container d-flex align-items-center justify-content-between">
         <div id="logo" aria-label="logo wangine wedhus">
           <h1 class="title-web d-sm-block">
@@ -117,11 +121,7 @@
                   width="25"
                   height="25"
                   fill="currentColor"
-                  class="bi bi-person-circle", ipsum dolor sit amet consectetur adipisicing elit. Rerum illum ipsa quae nostrum ad cumque minima nam quo porro vel? Quas deserunt voluptates quaerat nam commodi sint blanditiis est voluptatibus.
-
-                  Kurir Pengiriman
-                  ￼JNE OKE Rp.(XX.XXX)
-                  ￼JNE YES Rp.(XX.XXX)
+                  class="bi bi-person-circle"
                   viewBox="0 0 16 16"
                 >
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -156,36 +156,67 @@
     <!-- End Header -->
 
     <main id="main">
-        <div class="background-f5fff3 col-md-9 mx-auto">
-          <div class="backgorund-fff p-3" style="min-height: 500px">
-            <div class="cart-produk">
-              <div class="detail-produk border-2 row justify-content-center align-items-center">
-                <div class="thumbnail-produk col">
-                  <span class="d-inline-block">
-                  <input type="checkbox">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1664355811205-3939787c7abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt=""
-                    width="300px"
-                  />
-                </span>
+      <div class="background-f5fff3 col-md-9 mx-auto">
+        <div class="backgorund-fff p-3">
+          <div class="cart-produk">
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div class="row d-flex justify-content-between align-items-center text-center">
+                  <div class="col-md-12 col-lg-3 d-flex">
+                    <span id="zoom">
+                      <img
+                      src="https://plus.unsplash.com/premium_photo-1664355811205-3939787c7abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt"/>
+                    </span>                    
+                  </div>
+                  <div class="col-md-12 col-lg-2 my-3">
+                    <h3 class="mb-2 fw-bolder fs-5 produk-name">Nama Produk</h3>
+                    <!-- <p class="lead ">Nama Produk</p> -->
+                  </div>
+                  <div class="col-md-12 col-lg-2 mb-3">
+                    <h5 class="mb-0 produk-harga">$499.00</h5>
+                  </div>
+                  <div class="col-md-12 col-lg-2 d-flex justify-content-center">
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                      </svg>
+                    </button>
+    
+                    <input id="form1" min="0" name="quantity" value="2" type="number"
+                      class="form-control mx-3" style="max-width: 100px; text-align:center;" />
+    
+                    <button class="btn btn-link px-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end text-md-center mt-5 mt-md-0">
+                    <a href="#!" class="text-danger">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-                <div class="col meta-produk">
-                  <h4>Nama Produk</h4>
-                </div>
-                <div class="col">
-                  <h4>Jumlah</h4>
-                </div>
-                <div class="col">
-                  <h4>total</h4>
-                </div>
-              </div>
-              <div class="btn-learn-more ">
-                hapus produk
               </div>
             </div>
           </div>
         </div>
+        <div class="backgorund-fff p-3 mt-2" style="padding: 15px;" data-aos="fade-up">
+          <div class="searchcontainer d-flex align-items-center justify-content-center" data-aos="fade-up"  data-aos-delay="100" style="margin-left:0px;">
+              <input type="text" name="Kupon" placeholder="Masukkan kupon">
+              <div class="btn"> Klaim Kupon</div>
+          </div>
+          <div class="button" data-aos="fade-up" data-aos-delay="100">
+              <p style="display: flex; margin-right: 20px; align-items: center;">Rp. (Total Harga) </p>
+              <a class="btn btn-bayar text-end" role="button" href="bayar.html"> Bayar Sekarang </a>
+          </div>
+      </div>
+      </div>
     </main>
 
     <!-- ======= Footer ======= -->

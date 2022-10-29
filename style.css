@@ -459,7 +459,7 @@ span {
 }
 
 #main {
-  min-height: 90vh;
+  /* min-height: 90vh; */
   position: relative;
 }
 
