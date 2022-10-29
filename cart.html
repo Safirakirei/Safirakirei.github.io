@@ -32,7 +32,7 @@
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="font.css" />
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/detail-produk.css" />
 
     <link rel="stylesheet" href="vendor/bootstrap-icons.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -46,7 +46,7 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top d-flex align-items-center">
+    <header id="header" class="header fixed-top d-flex align-items-center px-1 px-md-0">
       <div class="container d-flex align-items-center justify-content-between">
         <div id="logo" aria-label="logo wangine wedhus">
           <h1 class="title-web d-sm-block">
@@ -58,7 +58,7 @@
 
         <nav id="navbar" class="navbar">
           <div class="d-lg-none d-md-block cart-mobile">
-            <a href="cart.html" class="nav-link">
+            <a href="cart.html" class="nav-link mx-2 mx-md-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -117,7 +117,11 @@
                   width="25"
                   height="25"
                   fill="currentColor"
-                  class="bi bi-person-circle"
+                  class="bi bi-person-circle", ipsum dolor sit amet consectetur adipisicing elit. Rerum illum ipsa quae nostrum ad cumque minima nam quo porro vel? Quas deserunt voluptates quaerat nam commodi sint blanditiis est voluptatibus.
+
+                  Kurir Pengiriman
+                  ￼JNE OKE Rp.(XX.XXX)
+                  ￼JNE YES Rp.(XX.XXX)
                   viewBox="0 0 16 16"
                 >
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -152,26 +156,36 @@
     <!-- End Header -->
 
     <main id="main">
-      <div class="d-flex justify-content-center">
-        <div class="background-f5fff3 col-md-9">
+        <div class="background-f5fff3 col-md-9 mx-auto">
           <div class="backgorund-fff p-3" style="min-height: 500px">
             <div class="cart-produk">
-              <div class="detail-produk row">
-                <div class="thumbnail-produk col-12 col-lg-6">
+              <div class="detail-produk border-2 row justify-content-center align-items-center">
+                <div class="thumbnail-produk col">
+                  <span class="d-inline-block">
+                  <input type="checkbox">
                   <img
                     src="https://plus.unsplash.com/premium_photo-1664355811205-3939787c7abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt=""
                     width="300px"
                   />
+                </span>
                 </div>
-                <div class="meta-produk">
+                <div class="col meta-produk">
                   <h4>Nama Produk</h4>
                 </div>
+                <div class="col">
+                  <h4>Jumlah</h4>
+                </div>
+                <div class="col">
+                  <h4>total</h4>
+                </div>
+              </div>
+              <div class="btn-learn-more ">
+                hapus produk
               </div>
             </div>
           </div>
         </div>
-      </div>
     </main>
 
     <!-- ======= Footer ======= -->

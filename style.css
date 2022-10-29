@@ -211,9 +211,10 @@ span {
   text-decoration: none;
 }
 
-@media (max-width: 379px) {
+@media (max-width: 403px) {
   #header #logo .title-web {
     display: none;
+    /* font-size: large; */
   }
 }
 
@@ -551,11 +552,13 @@ section {
   background-color: #f5fff3;
   border-radius: 3px;
   margin-bottom: 20px;
+  padding: 5px;
 }
 .backgorund-fff {
   margin: 10px;
   background-color: #fff;
   padding: 1px;
+  border-radius: 3px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 /* .checkoutboxx {
