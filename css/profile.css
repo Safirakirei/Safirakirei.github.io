@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# Profile
+--------------------------------------------------------------*/
+.box {
+  margin-top: 100px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 14px 0px;
+  background-color: #f5fff3;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.box .row {
+  margin: 10px;
+  padding: 1px;
+}
+.box .row .col-4,
+#profile .box .row .col-7,
+#profile .box .row .col {
+  margin: 5px;
+  background-color: #fff;
+  padding: 3px;
+  padding-left: 7px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
+.box .row .col-4 {
+  height: fit-content;
+}
+.box .row .col-4 img {
+  max-width: inherit;
+  border-radius: 15px;
+  padding: 15px;
+}
+.box .row .col-7 {
+  padding: 15px;
+}
+.box .row .col-7 h3 {
+  padding: 1vw;
+  font-size: max(18px, min(2vw, max(30px, 1.5vw)));
+}
+.box .row .probtn {
+  background: #71c55d;
+  color: #fff;
+  border: 2px solid #71c55d;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.box .row .probtn:hover {
+  background: #5c9f4b;
+  border: 2px solid #5c9f4b;
+  text-decoration: none;
+}
+.box .row .col {
+  max-width: 160px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.box .row .col:hover {
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.5s ease-in-out 0s;
+}
+.box .row .col img {
+  max-width: 100px;
+  border-radius: 15px;
+  padding: 15px;
+}
+.box .row .col h4 {
+  text-align: center;
+  line-height: inherit;
+}
+
+@media (max-width: 500px) {
+  .pp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .pp .col-4 {
+    width: 50vw;
+  }
+  .pp .col-7 {
+    width: 95vw;
+  }
+  .box .row .col img {
+    max-width: 80px;
+  }
+  .box .row .col {
+    max-width: 125px;
+  }
+}
