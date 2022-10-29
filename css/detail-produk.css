@@ -1,0 +1,121 @@
+.detail-produk{
+  margin: 10px;
+  padding: 5px 10px ;
+}
+.thumbnail-detail-produk img{
+  max-width: 500px;
+  width: calc(25vw);
+  object-fit: cover;
+}
+/* .meta-produk{
+  min-height: ;
+} */
+.detail-produk .meta-produk {
+  padding: 20px;
+}
+
+.meta-produk .name-produk {
+  font-size: 25px;
+  font-family: "Noto Sans Mono", monospace;
+  margin-bottom: 7px;
+}
+
+.meta-produk .name-category-produk{
+  font-family: "Lato", sans-serif;
+  font-size: large;
+}
+
+.meta-produk .price {
+  display: flex;
+  font-size: larger;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: calc(1vw);
+  margin-bottom:15px;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.jumlah {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: large;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.jumlah p{
+  background-color: #f4f4f4;
+  padding: calc(1vw);
+}
+
+.action-produk{
+  margin-left: 10px;
+}
+
+.action-produk .btn-keranjang {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #71c55d;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #71c55d;
+  background-color: #e6f1e3;
+}
+
+.action-produk .btn-keranjang:hover {
+  background: #f2faf0;
+  text-decoration: none;
+}
+
+.action-produk .btn-checkout {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #ffffff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #71c55d;
+  background-color: #71c55d;
+}
+.action-produk .btn-checkout:hover {
+  background: #78cf62;
+}
+
+.deskripsi-produk{
+  padding: 20px;
+}
+
+.deskripsi-produk h3{
+  margin-bottom: 10px;
+}
+/* .detail-produk .meta-produk .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+} */
+
+@media (max-width:992px) {
+  .thumbnail-detail-produk img{
+    object-fit: cover;
+    max-width: none;
+    width: auto;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .jumlah {
+    margin-bottom: 5px;
+  }
+}
