@@ -1,0 +1,108 @@
+/*--------------------------------------------------------------
+# Form Pembayaran
+--------------------------------------------------------------*/
+.box {
+    margin-top: 100px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 14px 0px;
+    background-color: #f5fff3;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.box .row {
+    margin: 10px;
+    padding: 1px;
+}
+.box .row h4{
+    letter-spacing: 1px;
+}
+.box .row .col-md-10 .row{
+    margin: 0px;
+}
+.btna {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-decoration: none;
+    width: max-content;
+    pointer-events: none;
+}
+.btn-tunggu{
+    border: 2px solid #788a41;
+    background: #788a41;
+}
+.btn-proses{
+    border: 2px solid #5dc5b0;
+    background: #5dc5b0;
+}
+.btn-lunas{
+    border: 2px solid #71c55d;
+    background: #71c55d;
+}
+.btn-get-started {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 11px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 15px;
+    border: 2px solid #71c55d;
+    background: #fff;
+    color: #71c55d;
+    text-decoration: none;
+    width: max-content;
+}
+.btn-get-started:hover {
+    background: #71c55d;
+    color: #fff;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Pilih File';
+    display: inline-block;
+    background: #71c55d;
+    border: 1px solid #71c55d;
+    border-radius: 3px;
+    padding: 5px 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.custom-file-input:hover::before {
+    background: #377e5c;
+}
+.custom-file-input{
+    border: 1px solid #71c55d;
+    border-radius: 3px;
+}
+@media (max-width: 992px) {
+    .box .row {
+        padding: 1rem;
+    }
+    .box .row .col-md-10 .row, .box .row .col-md-12 .row{
+        padding: 1px;
+    }
+}
+@media (max-width: 789px) {
+    .row select, .row input{
+        width: 60% !important;
+    }
+}
+@media (max-width: 550px) {
+    .row select, .row input{
+        width: 100% !important;
+    }
+}
