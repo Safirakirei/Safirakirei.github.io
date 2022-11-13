@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(100vh - 40px);
   position: relative;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 @media (min-width: 1025px) {
@@ -67,6 +67,7 @@
   letter-spacing: 2px;
   margin-bottom: 10px;
   text-transform: capitalize;
+  /* margin-top: 50px; */
 }
 
 @media (max-width: 768px) {
@@ -89,7 +90,7 @@
   letter-spacing: 1px;
   display: inline-block;
   padding: 11px 36px;
-  border-radius: 50px;
+  border-radius: 30px;
   transition: 0.5s;
   margin-bottom: 30px;
   border: 2px solid #71c55d;
@@ -97,24 +98,31 @@
   color: #71c55d;
   text-decoration: none;
   width: max-content;
+  white-space: normal;
+  word-wrap: break-word;
 }
-@media (min-width: 768px) {
-  
+@media screen and (max-width:500px) {
+  .btn-get-started{
+    width: auto;
+    font-size: 15px !important;
+    padding: 10px 10px !important;
+    font-size: small !important;
+  }
 }
+/* @media (max-width: 768px) {
+  .btn-get-started{
+    font-size: medium;
+  }
+} */
 
 .btn-get-started:hover {
   background: #71c55d;
   color: #fff;
 }
 
-#hero .btns a {
-  color: #555;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 4px 20px;
-  text-decoration: none;
-  transition: 0.3s;
+.caption-button{
+  white-space: normal;
+
 }
 
 @media (max-width: 575px) {
@@ -152,6 +160,14 @@ Jual-Page
   background: #fff;
   color: #acc55d;
   text-decoration: none;
+}
+@media screen and (max-width:500px) {
+  .btn-get-cancel{
+    width: auto;
+    font-size: 15px !important;
+    padding: 5px 10px !important;
+    font-size: smaller !important;
+  }
 }
 .btn-get-cancel:hover {
   background: #788a41;

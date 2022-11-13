@@ -11,6 +11,7 @@
 body {
   background-color: #fffefe;
   color: #333;
+  min-width: 300px;
 }
 
 h1,
@@ -195,6 +196,7 @@ span {
   z-index: 997;
   transition: all 0.5s ease;
   padding: 20px 0;
+  text-size-adjust: auto;
 }
 
 #header #logo h1 {
@@ -203,6 +205,7 @@ span {
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0;
+  text-size-adjust: auto !important;
 }
 
 #header #logo h1 a {
@@ -211,12 +214,24 @@ span {
   text-decoration: none;
 }
 
-@media (max-width: 403px) {
+@media only screen and (max-width: 400px) {
   #header #logo .title-web {
-    display: none;
-    /* font-size: large; */
+    /* display: none; */
+    font-size: larger;
   }
 }
+@media only screen and (max-width: 280px) {
+  #header #logo .title-web {
+    display: none;
+    /* font-size: inherit; */
+  }
+}
+/* @media (max-width: 403px) {
+  #header #logo .title-web {
+    display: none;
+    font-size: large;
+  }
+} */
 
 #header #logo h1 a span {
   color: rgb(26 136 0);

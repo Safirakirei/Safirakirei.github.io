@@ -171,7 +171,7 @@
           <div class="form-jual">
             <form class="p-3">
               <div class="row mb-3">
-                <div class="col">
+                <div class="col-12 col-sm-12 col-md-6">
                   <label for="nama" class="form-label">Nama Penjual *</label>
                   <input
                     type="text"
@@ -185,7 +185,7 @@
                     oninput="this.setCustomValidity('')"
                   />
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-12 col-md-6">
                   <label for="no_hp" class="form-label"
                     >Nomor Handphone *</label
                   >
@@ -203,7 +203,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <div class="col">
+                <div class="col-12 col-sm-12 col-md-6">
                   <label for="email" class="form-label"
                     >Email (opsional)</label
                   >
@@ -218,7 +218,7 @@
                     oninput="this.setCustomValidity('')"
                   />
                 </div>
-                <div class="col ">
+                <div class="col-12 col-sm-12 col-md-6 ">
                   <label for="jenis_ternak" class="form-label"
                     >Jenis Ternak *</label
                   >
@@ -236,7 +236,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col mb-3">
+                <div class="col-12 col-sm-12 col-md-6 mb-3">
                   <label for="jumlah_ternak" class="form-label"
                     >Jumlah Ternak *</label
                   >
@@ -263,7 +263,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col mb-3">
+                <div class="col-12 col-sm-12 col-md-6 mb-3">
                   <label for="provinsi" class="form-label"
                     >Alamat Provinsi *</label
                   >
@@ -276,7 +276,7 @@
                     required
                   />
                 </div>
-                <div class="col mb-3">
+                <div class="col-12 col-sm-12 col-md-6 mb-3">
                   <label for="kota" class="form-label">Alamat Kota *</label>
                   <input
                     type="text"
@@ -313,13 +313,16 @@
                 >
               </div>
               <div class="d-flex justify-content-evenly">
-                <button type="submit" class="btn-get-started">
+                <div>
+                <button type="submit" class="me-1 btn-get-started">
                   Ajukan Penjualan
                 </button>
-
-                <button type="button" class="btn-get-cancel">
+              </div>
+              <div>
+                <button type="button" class="ms-1 btn-get-cancel">
                   Batalkan Penjualan
                 </button>
+              </div>
               </div>
             </form>
           </div>
