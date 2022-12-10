@@ -15,7 +15,8 @@
 
 .category-post {
   color: #386239 !important;
-  font-size: large;
+  font-size: larger;
+  font-family: "Gelasio", serif;
 }
 
 .category-post:hover {
@@ -23,7 +24,12 @@
 }
 
 .title-blog {
-  font-family: "Gelasio", serif;
+  font-family: "Noto Sans Mono", monospace;
+  color: #000;
+  /* font-size: 20px; */
+  /* font-weight: 700; */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 .post-content figure {
   max-height: fit-content;

@@ -15,18 +15,17 @@
   display: flex;
   justify-content: flex-end;
 }
-.btn-bayar {
-  border: 1px solid #005427a0;
-  border-radius: 5px;
-  color: #005427a0;
-  font-family: "Roboto", sans-serif;
-  /* font-size: 12px; */
-  padding: 10px 10px;
-  font-weight: 550;
-  text-transform: uppercase;
-  transition: all 0.5s ease-in-out 0s;
+.btn-learn-more-action{
+  margin: 0px !important;
 }
-.btn-bayar:hover {
-  background-color: #005427a0;
-  color: #fff;
+
+/* bayar page */
+
+.no-invoce h4{
+  font-family: "Gelasio", sans-serif;
+  /* font-size: 45px; */
+  /* font-weight: 100; */
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
 }

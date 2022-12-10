@@ -34,21 +34,36 @@
   border: 1px solid #b8e3b3;
 }
 .produk .produk-block .produk-name {
-  margin-bottom: 0px;
   font-family: "Noto Sans Mono", monospace;
+  color: #000;
+  font-size: 21px;
+  /* font-weight: 700; */
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  line-height: 2px;
+  margin-bottom: 20px;
+  /* margin-bottom: 0px; */
+  /* font-family: "Noto Sans Mono", monospace; */
 }
 .produk .produk-block .produk-category {
-  margin-bottom: 0;
-  font-size: small;
-  font-family: "Lato", sans-serif;
+  /* margin-bottom: 0; */
+  /* font-size: small; */
+  /* font-family: "Lato", sans-serif; */
+  z-index: 3; 
+  position: relative;
+  padding: 3px 8px 15px 0px;
+  /* margin: 0px !important; */
 }
 .produk .produk-block .produk-category .category-link {
-  color: #53612d;
+  /* color: #53612d; */
+  font-family: "Gelasio", serif;
+  text-decoration: none;
+  color: #3e8d67 !important;
   /* z-index: 2;
     position: relative; */
 }
 .produk .produk-block .produk-category .category-link:hover {
-  color: #778a41;
+  color: #3e8d67 !important;
 }
 .produk .produk-block .produk-harga {
   margin-bottom: 0;

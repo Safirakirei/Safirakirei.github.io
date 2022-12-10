@@ -36,52 +36,45 @@
   text-align: center;
 }
 
-#hero h1 {
+/* #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   font-family: "Gelasio", serif;
   color: #43b327;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #hero h1 {
     font-size: 35px;
     line-height: 36px;
   }
-}
+} */
 
-#hero h2 {
-  color: #777;
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-family: "Oleo Script", "cursive";
-  font-weight: 300;
-}
-
-#hero .title-page-jual h1 {
+/* #hero .title-page-jual h1 {
   font-family: "Oleo Script", "cursive";
   font-size: 45px;
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 10px;
   text-transform: capitalize;
-  /* margin-top: 50px; */
-}
+  margin-top: 50px;
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-}
+} */
 
-#hero img {
+/* #hero img {
   max-width: 70%;
+  max-width: 80%;
   margin-bottom: 30px;
-}
+} */
 .btn-get-started {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -101,8 +94,8 @@
   white-space: normal;
   word-wrap: break-word;
 }
-@media screen and (max-width:500px) {
-  .btn-get-started{
+@media screen and (max-width: 500px) {
+  .btn-get-started {
     width: auto;
     font-size: 15px !important;
     padding: 10px 10px !important;
@@ -120,9 +113,8 @@
   color: #fff;
 }
 
-.caption-button{
+.caption-button {
   white-space: normal;
-
 }
 
 @media (max-width: 575px) {
@@ -135,7 +127,6 @@
   color: #71c55d;
 }
 
-
 /*
 Jual-Page
 */
@@ -145,7 +136,7 @@ Jual-Page
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.btn-get-cancel {
+/* .btn-get-cancel {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -161,8 +152,8 @@ Jual-Page
   color: #acc55d;
   text-decoration: none;
 }
-@media screen and (max-width:500px) {
-  .btn-get-cancel{
+@media screen and (max-width: 500px) {
+  .btn-get-cancel {
     width: auto;
     font-size: 15px !important;
     padding: 5px 10px !important;
@@ -172,4 +163,20 @@ Jual-Page
 .btn-get-cancel:hover {
   background: #788a41;
   color: #fff;
+} */
+
+.cancel{
+  background: #187a00;
+  border: 2px solid #187a00;
+}
+
+.cancel:hover{
+  background: #229904;
+}
+
+a {
+  color: #71c55d;
+}
+a:hover{
+  color: #7fc16f;
 }

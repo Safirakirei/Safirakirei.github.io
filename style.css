@@ -1,10 +1,3 @@
-/**
-* Template Name: eStartup - v4.8.0
-* Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -23,7 +16,7 @@ h6 {
   margin: 0;
 }
 
-h2 {
+/* h2 {
   color: #000;
   font-weight: 600;
 }
@@ -42,15 +35,17 @@ h5 {
   font-size: 14px;
   font-weight: 500;
 }
+ */
 
-a {
+ a {
   letter-spacing: 2px;
   text-decoration: none;
   color: #71c55d;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 a:hover {
-  color: #38622e;
+  color: #56824b;
 }
 
 ul {
@@ -66,14 +61,14 @@ li {
   text-transform: capitalize;
 }
 
-p {
+/* p {
   color: #505050;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 2;
   margin-bottom: 20px;
-}
+} */
 
 span {
   letter-spacing: 1px;
@@ -84,7 +79,7 @@ span {
   padding-right: 0;
 }
 
-.btn {
+/* .btn {
   border: 1px solid #fff;
   border-radius: 50px;
   color: #fff;
@@ -93,13 +88,13 @@ span {
   padding: 15px 40px;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out 0s;
-}
+} */
 
-.btn-default:hover {
+/* .btn-default:hover {
   color: #fff;
   background-color: #e6e6e6;
   border-color: #adadad;
-}
+} */
 
 .fa {
   text-decoration: none;
@@ -183,9 +178,30 @@ span {
   border: 2px solid #71c55d;
 }
 .btn-learn-more:hover {
+  color: #71c55d;
+}
+
+.btn-learn-more-action{
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #ffffff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 20px;
+  border: 2px solid #71c55d;
   background: #71c55d;
-  color: #fff;
+}
+
+.btn-learn-more-action:hover{
+  background: #8bd07b;
   text-decoration: none;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -214,16 +230,24 @@ span {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   #header #logo .title-web {
     /* display: none; */
-    font-size: larger;
+    font-size: x-large;
   }
 }
-@media only screen and (max-width: 280px) {
+
+@media only screen and (max-width: 354px) {
   #header #logo .title-web {
-    display: none;
-    /* font-size: inherit; */
+    /* display: none; */
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  #header #logo .title-web {
+    font-size: 15px;
+    margin-right: 0px;
   }
 }
 /* @media (max-width: 403px) {
@@ -234,7 +258,7 @@ span {
 } */
 
 #header #logo h1 a span {
-  color: rgb(26 136 0);
+  color: rgb(26, 136, 0);
 }
 
 #header #logo img {
@@ -301,7 +325,7 @@ span {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 5px;
+  left: -90px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -529,10 +553,12 @@ section {
 }
 
 .separator {
-  color: #626262;
-  font-family: "Roboto", sans-serif;
+  color: #343434;
+  font-family: "Noto Sans Mono", monospace;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 15px;
   font-weight: 300;
+  /* letter-spacing: 0.5px; */
   margin-bottom: 30px;
   text-transform: capitalize;
 }
@@ -762,7 +788,7 @@ section {
   padding-bottom: 12px;
 }
 
-.footer .footer-newsletter form {
+.footer .footer-newsletter .form-email {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
@@ -772,13 +798,13 @@ section {
   border: 1px solid #94df82;
 }
 
-.footer .footer-newsletter form input[type="email"] {
+.footer .footer-newsletter .form-email input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-.footer .footer-newsletter form input[type="submit"] {
+.footer .footer-newsletter .form-email input[type="submit"] {
   position: absolute;
   top: -1px;
   right: -2px;
@@ -794,7 +820,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.footer .footer-newsletter form input[type="submit"]:hover {
+.footer .footer-newsletter .form-email input[type="submit"]:hover {
   background: #8bd07b;
 }
 

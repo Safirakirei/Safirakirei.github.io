@@ -31,25 +31,16 @@
 }
 
 #blog .block-blog .content-blog h4 {
-  line-height: 24px;
-  margin-bottom: 20px;
+  font-family: "Noto Sans Mono", monospace;
+  color: #000;
+  font-size: 21px;
+  /* font-weight: 700; */
+  letter-spacing: 1px;
   text-transform: capitalize;
-  font-weight: normal;
-  letter-spacing: 0;
-  font-size: 16px;
-  font-family: "Gelasio", serif;
+  line-height: 2px;
+  margin-bottom: 20px;
 }
 
-#blog .block-blog .content-blog h4 a {
-  color: #555;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: larger;
-}
-
-#blog .block-blog .content-blog h4 a:hover {
-  color: #71c55d;
-}
 #blog .block-blog .content-blog .keterangan-blog {
   position: relative;
 }
@@ -63,10 +54,9 @@
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
-  letter-spacing: 0;
+  /* transition: 0.3s; */
+  /* letter-spacing: 0.5; */
   text-transform: capitalize;
-  font-family: "Noto Sans Mono", monospace;
   color: #71c55d;
 }
 
@@ -75,16 +65,11 @@
 }
 #blog .content-blog .category-blog {
   position: relative;
-}
-#blog .content-blog .category-blog p {
-  margin: 4px;
-}
-#blog .content-blog .category-blog a {
-  color: #3e8d67;
-  font-size: 17px;
+  z-index: 2;
+  padding: 3px 8px 10px 0px;
 }
 
-#blog .content-blog .category-blog a:hover {
-  color: #48ca8b;
-  text-decoration: none;
+#blog .content-blog .category-blog a {
+  font-family: "Gelasio", serif;
+  color: #3e8d67;
 }

@@ -27,6 +27,17 @@
   width: 100%;
   transition: all 0.5s ease-in-out 0s;
 }
+
+.title-gallery {
+  font-family: "Noto Sans Mono", monospace;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
 #gallery .gallery-block:hover .gallery-content {
   bottom: 0px;
   transition: all 0.5s ease-in-out 0s;
@@ -40,11 +51,12 @@
   object-fit: cover;
 }
 .gallery-detail-selected .gallery-detail-description p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-weight: 100; */
   color: #000 !important;
 }
-#zoom{
+
+#zoom {
   display: inline-block;
   position: relative;
 }

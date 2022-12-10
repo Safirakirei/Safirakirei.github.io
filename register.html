@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Wangine Wedhus</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- prelaod -->
+    <link
+      rel="dns-prefetch"
+      href="https://code.jquery.com/jquery-3.6.1.min.js"
+      as="script"
+    />
+    <link rel="preload" href="vendor/swiper-bundle.min.css" as="style" />
+    <link rel="preload" href="vendor/aos.css" as="style" />
+    <link rel="preload" href="vendor/swiper-bundle.min.js" as="script" />
+    <link rel="preload" href="vendor/aos.js" as="script" />
+    <link rel="preload" href="main.js" as="script" />
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos.css" rel="stylesheet" />
+    <link href="vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+
+    <link rel="stylesheet" href="vendor/bootstrap-icons.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="vendor/jquery.zoom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#zoom").zoom();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center px-1 px-md-0"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <div id="logo" aria-label="logo wangine wedhus">
+          <h1 class="title-web d-sm-block">
+            <a href="index.html"><span>Wangine</span>Wedhus</a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="img/logo.png" alt="" title="" /></a> -->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <div class="d-lg-none d-md-block cart-mobile">
+            <a href="cart.html" class="nav-link mx-2 mx-md-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-cart-fill mx-md-4 mx-lg-1 mx-sm-4 mx-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Nambahin tombol Login sama Register -->
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">beranda</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="mitra.html">Kemitraan</a>
+            </li>
+            <li><a class="nav-link scrollto" href="jual.html">Jual</a></li>
+            <li><a class="nav-link scrollto" href="produk.html">Produk</a></li>
+            <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+
+            <!-- if user guest-->
+
+            <!-- <li><a class="getstarted scrollto" href="#">Masuk</a></li> -->
+            <!-- <li><a class="getstarted scrollto" href="#">Daftar</a></li> -->
+
+            <!-- if user login -->
+            <li class="d-none d-lg-block d-md-none">
+              <a href="cart.html" class="nav-link mx-md-4 mx-lg-1 mx-sm-4">
+                <!-- <i class="bi bi-cart-fill" style="font-size: x-large"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-cart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="d-none d-lg-block d-md-none dropdown">
+              <a class="nav-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+              </a>
+              <ul>
+                <li class="color">
+                  <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="d-lg-none d-md-block">
+              <a class="getstarted scrollto" href="profile.html"> Profile </a>
+            </li>
+            <li class="d-lg-none d-md-block">
+              <a class="getstarted scrollto logout" href="#"> Logout </a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+      <section class="auth">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+              <div class="card border-0 shadow rounded-3 my-5">
+                <div class="card-body p-4 p-sm-5">
+                  <h2 class="card-title text-center mb-5 fw-light">
+                    Buat Akun Baru
+                  </h2>
+                  <form method="POST" action="/register">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="name"
+                        name="name"
+                        :value="old('name')"
+                        required
+                        autofocus
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="wangine wedhus"
+                      />
+                      <label for="floatingInput">Nama</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        name="email"
+                        :value="old('email')"
+                        required
+                        autofocus
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="wanginewedhus@gmail.com"
+                      />
+                      <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="tel"
+                        name="nomor_handphone"
+                        :value="old('nomor_handphone')"
+                        required
+                        autofocus
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="wangine wedhus"
+                      />
+                      <label for="floatingInput">Nomor Handphone</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="floatingInput">Provinsi</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="floatingInput">Kota</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <textarea
+                        name="alamat"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        value="old('alamat')"
+                        class="form-control"
+                        id="floatingInput"
+                      ></textarea>
+                      <!-- <input
+                      type="text" 
+                      name="alamat" 
+                      :value="old('alamat')" 
+                      required 
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="wangine wedhus"
+                      /> -->
+                      <label for="floatingInput">Alamat detail</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        name="password"
+                        required
+                        autocomplete="current-password"
+                        class="form-control"
+                        id="floatingPassword"
+                        placeholder="Password"
+                      />
+                      <label for="floatingPassword">Password</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        name="password_confirmation"
+                        required
+                        autocomplete="new-password"
+                        class="form-control"
+                        id="floatingPassword"
+                        placeholder="Password"
+                      />
+                      <label for="floatingPassword">Konfirmasi Password</label>
+                    </div>
+
+                    <div class="form-check my-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        name="subcribtion"
+                        id="subcribtion"
+                      />
+                      <label class="form-check-label" for="subcribtion">
+                        Langganan konten wangine wedhus
+                      </label>
+                    </div>
+                    <div class="d-grid">
+                      <button
+                        class="btn btn-primary btn-login text-uppercase fw-bold"
+                        type="submit"
+                      >
+                        Daftar
+                      </button>
+                    </div>
+                    <div
+                      class="forgot-regist mt-4 row justify-content-between align-items-center text-center"
+                    >
+                      <div class="col-12 col-lg-6 mt-3">
+                        <a href="login.html"><h4>Login</h4></a>
+                      </div>
+                      <div class="col-12 col-lg-6 mt-3">
+                        <a href="forgot-password.html"
+                          ><h4>Lupa Password</h4></a
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

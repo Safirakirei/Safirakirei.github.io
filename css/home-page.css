@@ -46,46 +46,50 @@
   text-align: center;
 }
 
+#hero .title-web{
+  max-width: 800px;
+}
+
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  font-family: "Gelasio", serif;
-  color: #43b327;
+  font-weight: 300;
+  /* line-height: 56px; */
+  font-family: "Oleo Script", "cursive";
+  /* color: rgb(66, 62, 62); */
+  color: #777;
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 35px;
+    /* font-size: 35px; */
     line-height: 36px;
   }
 }
 
-#hero h2 {
+/* #hero h2 {
   color: #777;
   margin-bottom: 30px;
   font-size: 20px;
   font-family: "Oleo Script", "cursive";
   font-weight: 300;
-}
+} */
 
-#hero .title-page-jual h1 {
+/* #hero .title-page-jual h1 {
   font-family: "Oleo Script", "cursive";
   font-size: 45px;
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 10px;
   text-transform: capitalize;
-}
-
+} */
+/* 
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-}
+} */
 
 #hero img {
   max-width: 70%;
@@ -114,7 +118,7 @@
   color: #fff;
 }
 
-#hero .btns a {
+/* #hero .btns a {
   color: #555;
   font-size: 11px;
   font-weight: 600;
@@ -122,17 +126,17 @@
   margin: 4px 20px;
   text-decoration: none;
   transition: 0.3s;
-}
+} */
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   #hero .btns a {
     margin: 4px 8px;
   }
-}
+} */
 
-#hero .btns a:hover {
+/* #hero .btns a:hover {
   color: #71c55d;
-}
+} */
 
 /* About Us Section
 --------------------------------*/
@@ -144,21 +148,22 @@
   padding: 120px 0;
   background-size: cover;
 }
-.aboutus h3 {
+.aboutus h2 {
   color: hsla(117, 23%, 16%, 0.907) !important;
   font-size: 28px !important;
-  font-weight: 700 !important;
+  /* font-weight: 700 !important; */
   padding-bottom: 15px !important;
 }
 .aboutus p {
   color: hsla(117, 23%, 16%, 0.907) !important;
   font-weight: 500 !important;
 }
-.aboutus h5 {
+
+/* .aboutus h5 {
   color: hsla(117, 23%, 16%, 0.907);
   font-size: 15px;
   font-weight: 500;
-}
+} */
 
 @media (max-width: 1024px) {
   .aboutus {
@@ -196,10 +201,23 @@
 }
 
 #features .feature-block h4 {
+  font-family: "Noto Sans Mono", monospace;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 2;
   margin-bottom: 20px;
 }
 
 #features .feature-block p {
+  color: #505050;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  margin-bottom: 20px;
   margin-bottom: 0;
 }
 
@@ -214,7 +232,7 @@
   color: #71c55d;
   content: "\f10e";
   display: inline-block;
-  font: 70px/1 FontAwesome;
+  font: 70px;
   position: absolute;
   right: 43px;
   text-align: left;
@@ -346,7 +364,7 @@
 #contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
-#contact .php-email-form .validate {
+/* #contact .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -371,14 +389,14 @@
   text-align: center;
   padding: 15px;
   font-weight: 600;
-}
-#contact .php-email-form .loading {
+} */
+/* #contact .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
-}
-#contact .php-email-form .loading:before {
+} */
+/* #contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -389,7 +407,7 @@
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
-}
+} */
 #contact .php-email-form .form-group {
   margin-bottom: 20px;
 }
@@ -413,7 +431,7 @@
 #contact .php-email-form textarea {
   padding: 10px 12px;
 }
-#contact .php-email-form button[type="submit"] {
+/* #contact .php-email-form button[type="submit"] {
   background: #71c55d;
   border: 0;
   padding: 12px 34px;
@@ -423,8 +441,8 @@
 }
 #contact .php-email-form button[type="submit"]:hover {
   background: #377e5c;
-}
-@-webkit-keyframes animate-loading {
+} */
+/* @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -439,4 +457,4 @@
   100% {
     transform: rotate(360deg);
   }
-}
+} */

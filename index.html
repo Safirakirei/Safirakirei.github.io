@@ -15,9 +15,7 @@
       as="script"
     />
     <link rel="preload" href="vendor/swiper-bundle.min.css" as="style" />
-    <link rel="preload" href="vendor/aos.css" as="style" />
     <link rel="preload" href="vendor/swiper-bundle.min.js" as="script" />
-    <link rel="preload" href="vendor/aos.js" as="script" />
     <link rel="preload" href="main.js" as="script" />
 
     <!-- Favicons -->
@@ -48,7 +46,10 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top d-flex align-items-center px-1 px-md-0">
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center px-1 px-md-0"
+    >
       <div class="container d-flex align-items-center justify-content-between">
         <div id="logo" aria-label="logo wangine wedhus">
           <h1 class="title-web d-sm-block">
@@ -60,7 +61,7 @@
 
         <nav id="navbar" class="navbar">
           <div class="d-lg-none d-md-block cart-mobile">
-            <a href="cart.html" class="nav-link mx-2 mx-md-0">
+            <a href="cart.html" class="nav-link mx-1 mx-md-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -156,12 +157,15 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="home-page">
       <div class="hero-container">
-        <h1>Wangine Wedhus</h1>
-        <h2>Perusahaan Ternak Kambing dan Domba terpecaya di jawa timur</h2>
+        <div class="title-web">
+          <h1 class="my-2">
+            Perusahaan Ternak Kambing dan Domba terbesar di jawa timur
+          </h1>
+        </div>
         <img
           src="img/hero-img.webp"
           alt="Wangine Wedhus"
-          class="img-hero"
+          class="img-hero mt-3"
           width="2000"
         />
         <a href="produk.html" class="btn-get-started scrollto"
@@ -175,8 +179,10 @@
       <!-- ======= About Us Section ======= -->
       <section id="aboutus" class="aboutus">
         <div class="container">
-          <div class="text-center text-lg-center">
-            <h3>Tentang Wangine Wedhus</h3>
+          <div class="text-center">
+            <div class="section-title text-center">
+              <h2>Tentang Wangine Wedhus</h2>
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
               eveniet nisi soluta pariatur offi ciis nulla, consequatur
@@ -204,7 +210,7 @@
             </p>
           </div>
 
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
             <div class="col-md-6 col-lg-3">
               <div class="feature-block">
                 <img src="img/layanan/handshake.png" alt="img" />
@@ -289,33 +295,6 @@
       </section>
       <!-- End Features Section -->
 
-
-      <section id="lacak" class="padd-section mt-0 mb-5" style="box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; width: auto; border-top: 3px solid #71c55d;">
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>Periksa Pesanan Wangine Wedhus</h2>
-            <p class="separator">
-              Anda Dapat Melihat Perkembangan Status Pesanan Anda Dengan Cara Masukan Nomer Tagihan Pada Kolom
-            </p>
-          </div>
-
-          <input type="text" class="form-control text-center" placeholder="Masukan Nomor Tagihan">
-         
-          <div class="text-center" role="button">
-            <div role="button" class="btn-learn-more" style="background: #71c55d;color: #edf8ea;"
-              >Cari Pesanan</div
-            >
-          </div>
-
-          <div class="result mt-4 text-center">
-            <!-- <h4>Nomor Tidak Di Temukan</h4> -->
-            <h4>Di Temukan !!!!</h4>
-            <p class="fs-5">Nomor Tagihan : 12312-12312312-1123123</p><br>
-            <a href="formpembayaran.html">Lihat Detail Tagihan</a>
-          </div>
-        </div>
-      </section>
-
       <!-- ======= gallery Section ======= -->
       <section
         id="gallery"
@@ -329,7 +308,7 @@
               Galeri Wangine Wedhus merupakan dokumentasi kegiatan
             </p>
           </div>
-          <div class="row justify-content-center" data-aos="fade-up">
+          <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4 block-page">
               <div
                 class="gallery-block"
@@ -344,8 +323,8 @@
                   loading="lazy"
                 />
                 <div class="gallery-content">
-                  <span>Anak Kecil Lihat kambing</span>
-                  <h4>Kediri - 28/10/2022</h4>
+                  <h4 class="title-gallery">Anak Kecil Lihat kambing</h4>
+                  <p>Kediri - 28/10/2022</p>
                 </div>
               </div>
             </div>
@@ -363,8 +342,8 @@
                   loading="lazy"
                 />
                 <div class="gallery-content">
-                  <span>Anak Kecil Lihat kambing</span>
-                  <h4>Kediri - 28/10/2022</h4>
+                  <h4 class="title-gallery">Anak Kecil Lihat kambing</h4>
+                  <p>Kediri - 28/10/2022</p>
                 </div>
               </div>
             </div>
@@ -382,8 +361,8 @@
                   loading="lazy"
                 />
                 <div class="gallery-content">
-                  <span>Anak Kecil Lihat kambing</span>
-                  <h4>Kediri - 28/10/2022</h4>
+                  <h4 class="title-gallery">Anak Kecil Lihat kambing</h4>
+                  <p>Kediri - 28/10/2022</p>
                 </div>
               </div>
             </div>
@@ -408,9 +387,9 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">
-                <h4>Judul Image</h4>
-              </h5>
+              <div class="modal-title" id="staticBackdropLabel">
+                <h4 class="title-gallery">Judul Image</h4>
+              </div>
               <button
                 type="button"
                 class="btn-close"
@@ -426,9 +405,7 @@
                     class="figure-img img-fluid rounded"
                     alt="kambing"
                   />
-                  <figcaption class="figure-caption text-end">
-                    kediri - 28/10/2022
-                  </figcaption>
+                  <p class="text-end">kediri - 28/10/2022</p>
                 </figure>
                 <div class="gallery-detail-description">
                   <p>ini adalah foto kegiatan wangine wedhus</p>
@@ -461,11 +438,7 @@
             </p>
           </div>
 
-          <div
-            class="row justify-content-center"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4 mb-2">
               <div class="card block-blog p-1">
                 <img
@@ -474,20 +447,14 @@
                   alt="img"
                 />
                 <div class="content-blog">
-                  <div
-                    class="category-blog"
-                    style="position: relative; z-index: 2"
-                  >
+                  <div class="category-blog mb-2">
                     <a href="#">Susu</a>
                   </div>
-                  <h4 class="mt-2 fs-5 text-wrap">
-                    <a href="#">Makan Rutin Kambing</a>
-                  </h4>
-                  <span
-                    >
-                    17-08-2022</span
+                  <h4 class="text-wrap">Makan Rutin Kambing</h4>
+                  <span> 17-08-2022</span>
+                  <a class="float-end readmore" href="#"
+                    >Baca Selengkapnya...</a
                   >
-                  <a class="float-end readmore" href="#">Selengkapnya...</a>
                 </div>
                 <div>
                   <a class="stretched-link" href="detailblog.html"></a>
@@ -503,6 +470,47 @@
         </div>
       </section>
       <!-- End Blog Section -->
+
+      <!-- ======= lacak Section ======= -->
+      <section
+        id="lacak"
+        class="padd-section mt-0 mb-5"
+        style="
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+          width: auto;
+          border-top: 3px solid #71c55d;
+        "
+      >
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Periksa Pesanan Wangine Wedhus</h2>
+            <p class="separator">
+              Anda Dapat Melihat Perkembangan Status Pesanan Anda Dengan Cara
+              Masukan Nomer Tagihan Pada Kolom
+            </p>
+          </div>
+
+          <input
+            type="text"
+            class="form-control text-center"
+            placeholder="Masukan Nomor Tagihan"
+          />
+
+          <div class="text-center" role="button">
+            <div role="button" class="btn-learn-more-action">Cari Pesanan</div>
+          </div>
+
+          <div class="result mt-4 text-center">
+            <!-- <h4>Nomor Tidak Di Temukan</h4> -->
+            <h4>Di Temukan !!!!</h4>
+            <p class="fs-5">Nomor Tagihan : 12312-12312312-1123123</p>
+            <a href="formpembayaran.html" class="btn-learn-more"
+              >Lihat Detail Tagihan</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End lacak Section -->
 
       <!-- ======= Testimonials Section ======= -->
       <section
@@ -623,11 +631,7 @@
             </p>
           </div>
 
-          <div
-            class="row justify-content-center"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="row justify-content-center">
             <div class="col-lg-5 d-flex align-items-stretch">
               <div class="info">
                 <div class="address">
@@ -676,15 +680,26 @@
                     />
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="name">Email Anda</label>
+                    <label for="name">Nomor Handphone</label>
                     <input
-                      type="email"
+                      type="tel"
                       class="form-control"
                       name="email"
                       id="email"
                       required
+                      pattern="(\+62|62|0)8[1-9][0-9]{6,11}"
                     />
                   </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Email Anda</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
                 </div>
                 <div class="form-group">
                   <label for="name">Subjek</label>
@@ -705,15 +720,10 @@
                     required
                   ></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Memuat</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Pesanmu telah terkirim. Terima Kasih!
-                  </div>
-                </div>
                 <div class="text-center">
-                  <button type="submit">Kirim</button>
+                  <button type="submit" class="btn-learn-more-action">
+                    Kirim
+                  </button>
                 </div>
               </form>
             </div>
@@ -794,12 +804,14 @@
               <p>
                 Mendapatakan email terbaru artikel Wangine Wedhus secara gratis.
               </p>
-              <form action="" method="post">
+              <!-- <form action="" method="post"> -->
+              <div class="form-email">
                 <input type="email" name="email" /><input
                   type="submit"
                   placeholder="Masukan Alamat Email"
                 />
-              </form>
+              </div>
+              <!-- </form> -->
             </div>
           </div>
         </div>
@@ -899,7 +911,6 @@
 
     <!-- Vendor JS Files -->
     <script src="vendor/swiper-bundle.min.js"></script>
-    <script async src="vendor/aos.js"></script>
     <script async src="vendor/bootstrap.bundle.min.js"></script>
     <!-- Template Main JS File -->
     <script src="main.js"></script>
